@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Un Regalo Especial Para Stephany ✨</title>
+
+  <!-- Metadatos Open Graph optimizados para vista previa en WhatsApp y redes sociales -->
+  <meta property="og:title" content="Un Regalo Especial Para Stephany 🌸">
+  <meta property="og:description" content="Stephany, tengo algo muy especial para ti... Toca para descubrirlo.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#120624">
+
+  <style id="app-styles">
+    /* ==========================================================================
+       1. VARIABLES GLOBALES Y PALETA NOCTURNA LUMINISCENTE (TIKTOK AESTHETIC)
+       ========================================================================== */
+    :root {
+      /* Fondo noche mágica y universo romántico */
+      --bg-deep-night: #06020c;
+      --bg-twilight-1: #130626;
+      --bg-twilight-2: #240b3b;
+
+      /* Resplandores neón y bioluminiscencia */
+      --color-rose-glow: #ff2a7a;
+      --color-rose-radiant: #ff4d8d;
+      --color-rose-deep: #e6005c;
+      --color-rose-dark: #800033;
+      --color-rose-velvet: #4d001f;
+
+      /* Flores amarillas / doradas virales de TikTok */
+      --color-gold-bright: #ffe600;
+      --color-gold-warm: #ffb703;
+      --color-gold-glow: #ffd166;
+      --color-gold-deep: #fb8500;
+
+      /* Tallos y follaje verde esmeralda luminoso */
+      --color-stem-glow: #38ef7d;
+      --color-stem-main: #11998e;
+      --color-leaf-bright: #4ade80;
+      --color-leaf-dark: #0f5132;
+
+      /* Detalles de lujo y texto */
+      --color-text-bright: #ffffff;
+      --color-text-gold: #ffeaa7;
+      --color-text-muted: #d1c4e9;
+      --color-card-dark: rgba(16, 7, 32, 0.92);
+
+      /* Tipografías elegantes */
+      --font-romantic: "Playfair Display", "Didot", "Bodoni MT", "Georgia", serif;
+      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+
+      /* Curvas elásticas avanzadas para movimiento orgánico */
+      --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-bloom: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ==========================================================================
+       2. RESET Y ESTRUCTURA BASE RESPONSIVE (MÓVIL PRIMERO)
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-deep-night);
+      background-image: 
+        radial-gradient(circle at 50% 25%, #240b3b 0%, #110522 50%, #05010a 100%);
+      color: var(--color-text-bright);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      perspective: 1200px;
+    }
+
+    /* Contenedor tipo teléfono vertical (9:16) con halo de luz inmersivo */
+    .experience-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 430px;
+      height: 100vh;
+      height: 100dvh;
+      background: radial-gradient(circle at 50% 32%, #220a3a 0%, #120422 55%, #07010e 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      box-shadow: 
+        0 0 80px rgba(255, 42, 122, 0.35),
+        0 0 140px rgba(255, 183, 3, 0.2),
+        0 30px 90px rgba(0, 0, 0, 0.95);
+      border-radius: 0;
+    }
+
+    @media (min-width: 480px) {
+      .experience-wrapper {
+        height: 90vh;
+        max-height: 860px;
+        border-radius: 40px;
+        border: 2px solid rgba(255, 215, 0, 0.35);
+      }
+    }
+
+    /* Rayos de luz dorada celestial (God Rays rotatorios) */
+    /* Rayos de luz celestial dorada (Optimizado para 60 FPS sin blur pesado) */
+    .god-rays-aura {
+      position: absolute;
+      top: 32%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 520px;
+      height: 520px;
+      background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        rgba(255, 230, 100, 0.16) 15deg,
+        transparent 30deg,
+        rgba(255, 42, 122, 0.12) 50deg,
+        transparent 70deg,
+        rgba(255, 215, 0, 0.18) 95deg,
+        transparent 120deg,
+        rgba(255, 180, 50, 0.14) 145deg,
+        transparent 175deg,
+        rgba(255, 230, 100, 0.16) 195deg,
+        transparent 210deg,
+        rgba(255, 42, 122, 0.12) 230deg,
+        transparent 250deg,
+        rgba(255, 215, 0, 0.18) 275deg,
+        transparent 300deg,
+        rgba(255, 180, 50, 0.14) 325deg,
+        transparent 355deg
+      );
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 1.8s ease;
+      will-change: transform, opacity;
+    }
+
+    .god-rays-aura.is-active {
+      opacity: 1;
+      animation: rotateGodRays 40s linear infinite;
+    }
+
+    @keyframes rotateGodRays {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* Halo mágico de resplandor central (Optimizado con degradado nativo sin blur pesado) */
+    .magic-glow-halo {
+      position: absolute;
+      top: 34%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, rgba(255, 42, 122, 0.25) 40%, rgba(255, 183, 3, 0.08) 65%, transparent 75%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 1.5s ease;
+      will-change: transform, opacity;
+    }
+
+    .magic-glow-halo.is-active {
+      opacity: 1;
+      animation: pulseHaloGlow 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseHaloGlow {
+      0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.65; }
+      100% { transform: translate(-50%, -50%) scale(1.18); opacity: 0.95; }
+    }
+
+    /* Capa ambiental de estrellas y luciérnagas */
+    .ambient-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 3;
+      overflow: hidden;
+      contain: layout style;
+    }
+
+    /* Estrellas micro-titilantes (Animadas por opacidad pura = Cero lag) */
+    .twinkling-star {
+      position: absolute;
+      border-radius: 50%;
+      background: #FFFFFF;
+      box-shadow: 0 0 5px 1px #FFF8E7;
+      pointer-events: none;
+      opacity: 0.2;
+      animation: starTwinkle 3.2s ease-in-out infinite alternate;
+      will-change: opacity;
+    }
+
+    @keyframes starTwinkle {
+      0% { opacity: 0.15; }
+      50% { opacity: 0.95; }
+      100% { opacity: 0.25; }
+    }
+
+    /* Luciérnagas doradas flotantes aceleradas por GPU */
+    .firefly {
+      position: absolute;
+      border-radius: 50%;
+      background: #FFF7B2;
+      box-shadow: 0 0 10px 3px var(--color-gold-warm), 0 0 20px 5px rgba(255, 215, 0, 0.5);
+      pointer-events: none;
+      opacity: 0;
+      animation: fireflyFloat 6s ease-in-out infinite;
+      will-change: transform, opacity;
+    }
+
+    @keyframes fireflyFloat {
+      0% { transform: translate3d(0, 0, 0) scale(0.4); opacity: 0; }
+      35% { opacity: 0.95; transform: translate3d(15px, -45px, 0) scale(1.1); }
+      70% { opacity: 0.8; transform: translate3d(-12px, -95px, 0) scale(0.85); }
+      100% { transform: translate3d(8px, -150px, 0) scale(0.2); opacity: 0; }
+    }
+
+    /* Pétalos flotantes cayendo en la noche */
+    .falling-petal-bg {
+      position: absolute;
+      width: 16px;
+      height: 22px;
+      background: radial-gradient(circle at 30% 30%, #FFD166 0%, #FF2A7A 60%, #800033 100%);
+      border-radius: 60% 40% 60% 40% / 50% 60% 40% 50%;
+      opacity: 0;
+      pointer-events: none;
+      filter: drop-shadow(0 0 10px rgba(255, 42, 122, 0.6));
+      animation: petalFallPath 10s linear infinite;
+    }
+
+    @keyframes petalFallPath {
+      0% {
+        transform: translateY(-40px) translateX(0) rotateZ(0deg) rotateX(0deg);
+        opacity: 0;
+      }
+      15% { opacity: 0.9; }
+      50% {
+        transform: translateY(50vh) translateX(30px) rotateZ(180deg) rotateX(60deg);
+      }
+      85% { opacity: 0.8; }
+      100% {
+        transform: translateY(105vh) translateX(-25px) rotateZ(360deg) rotateX(120deg);
+        opacity: 0;
+      }
+    }
+
+    /* Estallido de chispas de estrellas al abrir el sobre */
+    .magic-burst-spark {
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      box-shadow: 0 0 16px 4px var(--color-gold-bright), 0 0 28px 8px var(--color-rose-glow);
+      pointer-events: none;
+      z-index: 50;
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 0.9s cubic-bezier(0.1, 0.9, 0.2, 1);
+    }
+
+    /* ==========================================================================
+       3. ESCENA 1 Y 2: SOBRE ELEGANTE Y APERTURA 3D EN LA NOCHE
+       ========================================================================== */
+    .scene {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+    }
+
+    .scene-envelope {
+      z-index: 20;
+    }
+
+    .scene-envelope.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.85) translateY(60px);
+    }
+
+    /* Mensaje de expectativa inicial */
+    .teaser-wrapper {
+      margin-bottom: 28px;
+      text-align: center;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .teaser-text {
+      font-family: var(--font-romantic);
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--color-text-gold);
+      letter-spacing: 0.8px;
+      text-shadow: 0 0 16px rgba(255, 234, 167, 0.6), 0 2px 5px rgba(0,0,0,0.8);
+      animation: gentleBreathe 3s ease-in-out infinite;
+    }
+
+    @keyframes gentleBreathe {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.04); opacity: 1; text-shadow: 0 0 25px rgba(255, 215, 0, 0.9); }
+    }
+
+    /* Contenedor del Sobre 3D de lujo nocturno */
+    .envelope-box {
+      position: relative;
+      width: 280px;
+      height: 190px;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.85)), drop-shadow(0 0 25px rgba(255, 42, 122, 0.25));
+      transition: transform 0.8s var(--ease-smooth);
+      cursor: pointer;
+    }
+
+    .envelope-flap-back {
+      position: absolute;
+      inset: 0;
+      background: #1b0722;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .inner-card {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      right: 15px;
+      height: 160px;
+      background: linear-gradient(135deg, #FFFDF9 0%, #FFF5EB 100%);
+      border-radius: 10px;
+      border: 1.5px solid var(--color-gold-warm);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(0);
+      transition: transform 0.9s var(--ease-smooth);
+      z-index: 2;
+    }
+
+    .card-crest {
+      font-size: 2.2rem;
+      filter: drop-shadow(0 2px 6px rgba(255, 42, 122, 0.5));
+      animation: pulseCrest 2s ease-in-out infinite;
+    }
+
+    @keyframes pulseCrest {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+    }
+
+    .envelope-body-front {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #2c0b2f 0%, #17041c 100%);
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      clip-path: polygon(0% 0%, 50% 55%, 100% 0%, 100% 100%, 0% 100%);
+      box-shadow: inset 0 -4px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .envelope-flap-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 110px;
+      background: linear-gradient(180deg, #3d0f3a 0%, #220626 100%);
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+      transform-origin: top center;
+      transform-style: preserve-3d;
+      transition: transform 0.9s var(--ease-smooth), z-index 0.3s;
+      z-index: 4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 6px;
+    }
+
+    .wax-seal {
+      width: 46px;
+      height: 46px;
+      background: radial-gradient(circle at 35% 35%, #ff2a7a 0%, #b51752 70%, #520021 100%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 
+        0 4px 14px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(255, 42, 122, 0.7),
+        inset 0 2px 4px rgba(255, 255, 255, 0.5);
+      position: relative;
+      margin-bottom: -18px;
+    }
+
+    .seal-icon {
+      color: var(--color-gold-bright);
+      font-size: 1.25rem;
+      filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.9));
+    }
+
+    /* Estados de apertura 3D */
+    .envelope-box.is-opened .envelope-flap-top {
+      transform: rotateX(180deg);
+      z-index: 1;
+    }
+
+    .envelope-box.is-opened .inner-card {
+      transform: translateY(-85px);
+    }
+
+    /* Botón animado "Descubrir sorpresa" con resplandor neón */
+    .action-wrapper {
+      margin-top: 38px;
+      z-index: 10;
+    }
+
+    .btn-discover {
+      position: relative;
+      border: 1.5px solid var(--color-gold-bright);
+      background: linear-gradient(135deg, #ff2a7a 0%, #d80064 50%, #99003d 100%);
+      color: #FFFFFF;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding: 15px 38px;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 
+        0 8px 30px rgba(255, 42, 122, 0.6),
+        0 0 35px rgba(255, 215, 0, 0.5),
+        inset 0 1px 2px rgba(255, 255, 255, 0.5);
+      outline: none;
+      transition: all 0.35s var(--ease-smooth);
+      overflow: hidden;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .btn-discover:hover, .btn-discover:focus-visible {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 
+        0 12px 35px rgba(255, 42, 122, 0.8),
+        0 0 45px rgba(255, 215, 0, 0.7);
+    }
+
+    .btn-discover:active {
+      transform: translateY(1px) scale(0.97);
+    }
+
+    .btn-glow {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.7) 10%, transparent 60%);
+      opacity: 0;
+      pointer-events: none;
+      animation: buttonGlowSweep 3.5s infinite;
+    }
+
+    @keyframes buttonGlowSweep {
+      0% { transform: translate(-30%, -30%) rotate(0deg); opacity: 0; }
+      40% { opacity: 0.7; }
+      70% { opacity: 0; }
+      100% { transform: translate(30%, 30%) rotate(360deg); opacity: 0; }
+    }
+
+    /* ==========================================================================
+       4. ESCENA 3: RAMO FLORAL BOTÁNICO LUMINISCENTE (EL CENTRO ABSOLUTO)
+       ========================================================================== */
+    .scene-bloom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 15px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(25px) scale(0.92);
+      transition: opacity 1.2s var(--ease-smooth), transform 1.2s var(--ease-spring);
+      z-index: 15;
+    }
+
+    .scene-bloom.is-active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+
+    .scene-bloom.has-message {
+      /* El ramo se mantiene imponente en la parte superior-central sin ser tapado */
+      transform: translateY(-16px) scale(0.95);
+    }
+
+    .bouquet-stage {
+      position: relative;
+      width: 360px;
+      height: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-origin: bottom center;
+      transform: translateZ(0);
+      will-change: transform;
+    }
+
+    .bouquet-stage.in-breeze {
+      animation: naturalBreezeSway 6.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes naturalBreezeSway {
+      0% { transform: rotate(0deg) translateY(0); }
+      35% { transform: rotate(1.4deg) translateY(-3px); }
+      70% { transform: rotate(-1.5deg) translateY(2px); }
+      100% { transform: rotate(0.9deg) translateY(-1px); }
+    }
+
+    /* Lienzo botánico de tallos y hojas en SVG con resplandor neón */
+    .botanical-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      filter: drop-shadow(0 0 12px rgba(56, 239, 125, 0.75));
+    }
+
+    .stem-path {
+      fill: none;
+      stroke: url(#stemGradient);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      transition: stroke-dashoffset 2.4s var(--ease-bloom);
+    }
+
+    .stem-path.grown {
+      stroke-dashoffset: 0;
+    }
+
+    .botanical-leaf {
+      fill: url(#leafGradient);
+      transform-box: fill-box;
+      transform-origin: bottom left;
+      transform: scale(0) rotate(15deg);
+      opacity: 0;
+      transition: transform 1.2s var(--ease-spring), opacity 0.8s ease;
+      filter: drop-shadow(0 0 10px rgba(74, 222, 128, 0.6));
+    }
+
+    .botanical-leaf.leaf-right {
+      transform-origin: bottom right;
+      transform: scale(0) rotate(-15deg);
+    }
+
+    .botanical-leaf.sprouted {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+
+    /* Capa de flores tridimensionales bioluminiscentes */
+    .flowers-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      transform-style: preserve-3d;
+    }
+
+    .flower-head {
+      position: absolute;
+      transform-style: preserve-3d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: scale(0);
+      transition: transform 1.8s var(--ease-spring);
+    }
+
+    .flower-head.bloomed {
+      transform: scale(1);
+    }
+
+    /* Posiciones armoniosas de cada flor en el ramo */
+    .flower-main-rose {
+      top: 105px;
+      left: 50%;
+      margin-left: -60px;
+      width: 120px;
+      height: 120px;
+      z-index: 10;
+    }
+
+    .flower-left-peony {
+      top: 170px;
+      left: 32px;
+      width: 95px;
+      height: 95px;
+      z-index: 8;
+    }
+
+    .flower-right-blossom {
+      top: 180px;
+      right: 32px;
+      width: 92px;
+      height: 92px;
+      z-index: 8;
+    }
+
+    .flower-top-left-bud {
+      top: 60px;
+      left: 65px;
+      width: 62px;
+      height: 62px;
+      z-index: 6;
+    }
+
+    .flower-top-right-bud {
+      top: 65px;
+      right: 65px;
+      width: 62px;
+      height: 62px;
+      z-index: 6;
+    }
+
+    /* Pétalos individuales 3D ultra-luminosos (Animados exclusivamente por GPU transform) */
+    .petal {
+      position: absolute;
+      border-radius: 65% 35% 60% 40% / 50% 60% 40% 50%;
+      transform-origin: bottom center;
+      transform: scale(0) rotate(0deg);
+      transition: transform 1.5s var(--ease-spring);
+      backface-visibility: hidden;
+      contain: layout style paint;
+    }
+
+    .flower-head.bloomed .petal {
+      transform: scale(1) rotate(var(--rot)) translateY(var(--ty, 0px)) rotateX(var(--rx, 0deg));
+    }
+
+    /* Perlas de rocío cristalinas en los pétalos */
+    .dewdrop {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 45%, rgba(180, 220, 255, 0.4) 100%);
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6);
+      top: 18%;
+      right: 22%;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Núcleo de flor (Sol en miniatura que irradia luz dorada) */
+    .flower-core {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #FFFFFF 0%, #FFF3B0 30%, #FFB703 75%, #D48B00 100%);
+      box-shadow: 
+        0 0 25px 8px var(--color-gold-bright),
+        0 0 50px 16px var(--color-gold-warm),
+        0 0 75px 22px rgba(255, 42, 122, 0.6),
+        inset 0 1px 4px #FFFFFF;
+      z-index: 20;
+      transform: scale(0);
+      transition: transform 1.2s var(--ease-spring);
+      animation: coreGlowPulse 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes coreGlowPulse {
+      0% { box-shadow: 0 0 20px 6px var(--color-gold-bright), 0 0 40px 12px var(--color-gold-warm); }
+      100% { box-shadow: 0 0 35px 12px var(--color-gold-bright), 0 0 70px 24px rgba(255, 42, 122, 0.85); }
+    }
+
+    .flower-head.bloomed .flower-core {
+      transform: scale(1);
+    }
+
+    /* Estilo Rosa Majestuosa Central (Neón magenta & terciopelo rubí - Acelerado por GPU) */
+    .petal-rose-center {
+      background: radial-gradient(circle at 45% 25%, #FFF0F5 0%, #FF2E93 40%, #D80064 75%, #7A0034 100%);
+      box-shadow: 
+        inset 0 2px 8px rgba(255, 255, 255, 0.85),
+        inset 0 -4px 10px rgba(0, 0, 0, 0.6),
+        0 0 22px rgba(255, 46, 147, 0.7),
+        0 8px 18px rgba(0, 0, 0, 0.7);
+      will-change: transform;
+    }
+
+    /* Estilo Peonía / Flor Amarilla Radiante de TikTok */
+    .petal-peony {
+      border-radius: 50% 50% 45% 45%;
+      background: radial-gradient(circle at 40% 25%, #FFFCEB 0%, #FFE600 40%, #FFB703 75%, #E85D04 100%);
+      box-shadow: 
+        inset 0 2px 8px rgba(255, 255, 255, 0.9),
+        inset 0 -4px 10px rgba(0, 0, 0, 0.5),
+        0 0 24px rgba(255, 215, 0, 0.8),
+        0 8px 18px rgba(0, 0, 0, 0.7);
+      will-change: transform;
+    }
+
+    /* Estilo Flor silvestre luminosa */
+    .petal-blossom {
+      border-radius: 55% 45% 30% 30%;
+      background: radial-gradient(circle at 35% 35%, #FFFFFF 0%, #FF70A6 55%, #E01E5A 90%, #85002C 100%);
+      box-shadow: 
+        inset 0 2px 8px rgba(255, 255, 255, 0.85),
+        0 0 20px rgba(255, 112, 166, 0.7),
+        0 8px 18px rgba(0, 0, 0, 0.7);
+      will-change: transform;
+    }
+
+    /* ==========================================================================
+       5. ESCENA 4: DEDICATORIA DE CRISTAL OSCURO EN LA BASE (SIN TAPAR EL RAMO)
+       ========================================================================== */
+    .scene-message {
+      position: absolute;
+      bottom: 54px; /* Anclado en la base para que las flores reinen arriba */
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      padding: 0 16px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(40px) scale(0.92);
+      transition: opacity 1.2s var(--ease-smooth), transform 1.2s var(--ease-spring);
+      z-index: 25;
+    }
+
+    .scene-message.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+
+    .message-card-panel {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      background: var(--color-card-dark);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1.5px solid rgba(255, 215, 0, 0.65);
+      border-radius: 22px;
+      padding: 14px 18px 16px;
+      text-align: center;
+      box-shadow: 
+        0 16px 45px rgba(0, 0, 0, 0.8),
+        0 0 35px rgba(255, 215, 0, 0.35),
+        0 0 60px rgba(255, 42, 122, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+      animation: messageCardBreathe 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes messageCardBreathe {
+      0% { box-shadow: 0 16px 45px rgba(0,0,0,0.8), 0 0 25px rgba(255, 215, 0, 0.3); }
+      100% { box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 45px rgba(255, 215, 0, 0.55), 0 0 70px rgba(255, 42, 122, 0.35); }
+    }
+
+    .message-ornament {
+      color: var(--color-gold-bright);
+      font-size: 1rem;
+      opacity: 0.9;
+      margin: 1px 0;
+      letter-spacing: 4px;
+      text-shadow: 0 0 10px var(--color-gold-warm);
+    }
+
+    .message-recipient {
+      font-family: var(--font-romantic);
+      font-size: 1.28rem;
+      font-weight: 700;
+      color: var(--color-text-gold);
+      margin-bottom: 5px;
+      letter-spacing: 0.6px;
+      text-shadow: 0 0 14px rgba(255, 234, 167, 0.7), 0 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .message-body {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #FFFFFF;
+      margin: 5px 0 8px;
+      padding: 0 4px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+    }
+
+    .message-sender {
+      font-family: var(--font-romantic);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--color-gold-glow);
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(255, 209, 102, 0.6);
+    }
+
+    /* ==========================================================================
+       6. ESCENA 5: CONTROLES DE NAVEGACIÓN Y REPETICIÓN
+       ========================================================================== */
+    .controls-bar {
+      position: absolute;
+      bottom: 14px;
+      display: flex;
+      gap: 14px;
+      z-index: 30;
+      opacity: 0;
+      transform: translateY(15px);
+      transition: all 0.6s var(--ease-smooth);
+      pointer-events: none;
+    }
+
+    .controls-bar.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .btn-control {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(22, 9, 36, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1.5px solid rgba(255, 215, 0, 0.45);
+      color: var(--color-text-gold);
+      font-family: var(--font-body);
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6), 0 0 14px rgba(255, 215, 0, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .btn-control:hover {
+      background: rgba(36, 15, 60, 0.95);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.8), 0 0 22px rgba(255, 215, 0, 0.5);
+      border-color: var(--color-gold-bright);
+    }
+
+    .btn-control:active {
+      transform: translateY(1px);
+    }
+
+    .btn-audio {
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border-radius: 50%;
+    }
+
+    /* ==========================================================================
+       7. ACCESIBILIDAD: PREFERS-REDUCED-MOTION
+       ========================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor principal de la experiencia (formato vertical / móvil primero) -->
+  <div id="experience-container" class="experience-wrapper" role="main" aria-label="Tarjeta floral interactiva">
+
+    <!-- Rayos de luz celestial dorada (Efecto Waooo de iluminación de fondo) -->
+    <div id="god-rays" class="god-rays-aura" aria-hidden="true"></div>
+
+    <!-- Resplandor mágico de aura central -->
+    <div id="magic-glow-halo" class="magic-glow-halo" aria-hidden="true"></div>
+
+    <!-- Capa ambiental de partículas flotantes, estrellas y luciérnagas -->
+    <div id="ambient-particles" class="ambient-layer" aria-hidden="true"></div>
+
+    <!-- Escena 1 y 2: Sobre elegante interactivo con efecto 3D -->
+    <section id="envelope-scene" class="scene scene-envelope" aria-label="Sobre de regalo">
+      
+      <!-- Mensaje inicial de expectativa -->
+      <div class="teaser-wrapper">
+        <p id="ui-teaser-text" class="teaser-text">Stephany, tengo algo muy especial para ti...</p>
+      </div>
+
+      <!-- Componente 3D del Sobre -->
+      <div id="envelope-3d" class="envelope-box">
+        <!-- Solapa posterior interior -->
+        <div class="envelope-flap-back"></div>
+        
+        <!-- Tarjeta interna que se asoma antes de florecer -->
+        <div id="inner-letter-card" class="inner-card">
+          <div class="card-crest">🌸</div>
+        </div>
+
+        <!-- Cuerpo frontal del sobre -->
+        <div class="envelope-body-front"></div>
+
+        <!-- Solapa superior animada con perspectiva 3D -->
+        <div id="envelope-flap" class="envelope-flap-top">
+          <!-- Sello decorativo con lacre y destello dorado -->
+          <div class="wax-seal">
+            <span class="seal-icon">✦</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón de apertura interactivo con resplandor neón -->
+      <div class="action-wrapper">
+        <button id="btn-discover" class="btn-discover" type="button" aria-label="Descubrir sorpresa">
+          <span class="btn-text">Descubrir sorpresa</span>
+          <span class="btn-glow" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Escena 3: Contenedor botánico floral progresivo (SVG generativo y pétalos) -->
+    <section id="bloom-scene" class="scene scene-bloom" aria-label="Ramo floral interactivo" aria-hidden="true">
+      <div id="bouquet-stage" class="bouquet-stage">
+        <!-- SVG para tallos, ramas y hojas orgánicas -->
+        <svg id="botanical-svg" class="botanical-canvas" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs>
+            <!-- Gradientes para tallos y hojas verde esmeralda luminosos -->
+            <linearGradient id="stemGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#0f5132" />
+              <stop offset="30%" stop-color="#198754" />
+              <stop offset="70%" stop-color="#20c997" />
+              <stop offset="100%" stop-color="#38ef7d" />
+            </linearGradient>
+            <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#86efac" />
+              <stop offset="45%" stop-color="#22c55e" />
+              <stop offset="100%" stop-color="#0f5132" />
+            </linearGradient>
+          </defs>
+          <!-- Grupo de tallos orgánicos -->
+          <g id="stems-group" class="stems-layer"></g>
+          <!-- Grupo de follaje y hojas secundarias -->
+          <g id="foliage-group" class="foliage-layer"></g>
+        </svg>
+
+        <!-- Capa de flores 3D compuestas con pétalos volumétricos bioluminiscentes -->
+        <div id="flowers-layer" class="flowers-layer">
+          <!-- Flor Central (Rosa majestuosa neón rubí) -->
+          <div class="flower-head flower-main-rose" id="flower-center"></div>
+          <!-- Flor Izquierda (Flor Amarilla Radiante de TikTok) -->
+          <div class="flower-head flower-left-peony" id="flower-left"></div>
+          <!-- Flor Derecha (Flor silvestre luminosa) -->
+          <div class="flower-head flower-right-blossom" id="flower-right"></div>
+          <!-- Flores y capullos de acompañamiento superior -->
+          <div class="flower-head flower-top-left-bud" id="flower-accent-1"></div>
+          <div class="flower-head flower-top-right-bud" id="flower-accent-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Escena 4: Mensaje y dedicatoria personalizada -->
+    <section id="message-scene" class="scene scene-message" aria-label="Mensaje especial" aria-hidden="true">
+      <div class="message-card-panel">
+        <div class="message-ornament top-ornament">❦ ✦ ❦</div>
+        <h2 id="ui-recipient" class="message-recipient">Para Stephany</h2>
+        <p id="ui-main-message" class="message-body">
+          Las cosas más bonitas no necesitan una ocasión especial para existir. Solo el deseo de verte sonreír, Stephany.
+        </p>
+        <p id="ui-sender" class="message-sender">Con todo mi cariño, Luis</p>
+        <div class="message-ornament bottom-ornament">❦ ✦ ❦</div>
+      </div>
+    </section>
+
+    <!-- Escena 5: Controles de repetición y ambientación -->
+    <nav id="controls-bar" class="controls-bar" aria-label="Controles de la experiencia">
+      <button id="btn-replay" class="btn-control" type="button" aria-label="Repetir animación" title="Volver a vivir la sorpresa">
+        <span class="control-icon">↺</span>
+        <span class="control-text">Repetir</span>
+      </button>
+      <button id="btn-audio" class="btn-control btn-audio" type="button" aria-label="Silenciar o reactivar sonido" title="Silenciar / Activar sonido">
+        <span id="audio-icon" class="control-icon">🔊</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script id="floral-engine">
+    /* ==========================================================================
+       🌸 SECCIÓN DE PERSONALIZACIÓN DEL REGALO (EDITA AQUÍ FÁCILMENTE)
+       ==========================================================================
+       Modifica libremente los textos, nombres, dedicatoria, música y colores.
+       Todos los cambios se aplicarán de inmediato a la experiencia interactiva.
+    */
+    const GIFT_CONFIG = {
+      // 1. NOMBRES Y DEDICATORIA
+      recipientName: "Para Stephany", // Nombre de Stephany grabado en la experiencia
+      senderName: "Con todo mi cariño, Luis", // Tu nombre y firma grabados
+
+      // 2. TEXTOS DE LA EXPERIENCIA
+      teaserText: "Stephany, tengo algo muy especial para ti...", // Frase inicial en el sobre
+      buttonText: "Descubrir sorpresa",            // Texto del botón animado
+      mainMessage: "Las cosas más bonitas no necesitan una ocasión especial para existir. Solo el deseo de verte sonreír, Stephany.", // Mensaje dedicado a Stephany
+
+      // 3. MÚSICA PERSONALIZADA (MP3, MPEG O ENLACE)
+      // Si tienes un archivo de audio (ejemplo: 'golden_hour.mpeg'), colócalo en la misma carpeta.
+      // O pega un enlace directo a un audio en la web (ej: 'https://.../musica.mp3').
+      // Si no encuentra el archivo, reproducirá suavemente la melodía mágica nativa integrada.
+      customAudioUrl: "golden_hour.mpeg",
+
+      // 4. PALETA DE COLORES PRINCIPALES (en formato HEX)
+      colors: {
+        roseAccent: "#FF2A7A",     // Rosa neón principal de las flores
+        rosePastel: "#FFB4C4",     // Rosa suave de los pétalos
+        sageGreen: "#38EF7D",      // Verde esmeralda luminoso de tallos y hojas
+        goldAccent: "#FFE600"      // Tono dorado radiante de los destellos
+      }
+    };
+
+    /**
+     * MOTOR BOTÁNICO GENERATIVO (ETAPA 3)
+     * Construye tallos de curvas bézier orgánicas, hojas y pétalos 3D bioluminiscentes.
+     */
+    const BotanicalEngine = {
+      stemDefinitions: [
+        { id: 'stem-center', d: 'M 200,560 Q 195,380 200,225', width: 4.8, delay: 100 },
+        { id: 'stem-left',   d: 'M 200,550 Q 180,410 88,275',  width: 4.0, delay: 250 },
+        { id: 'stem-right',  d: 'M 200,550 Q 220,415 312,285', width: 4.0, delay: 350 },
+        { id: 'stem-sub-l',  d: 'M 185,420 Q 140,280 125,140', width: 3.0, delay: 500 },
+        { id: 'stem-sub-r',  d: 'M 215,420 Q 260,285 275,145', width: 3.0, delay: 600 }
+      ],
+
+      leafDefinitions: [
+        { d: 'M 0,0 C 20,-12 36,-6 42,8 C 30,22 12,18 0,0 Z', x: 190, y: 390, rot: -45, isRight: false, delay: 1100 },
+        { d: 'M 0,0 C -20,-12 -36,-6 -42,8 C -30,22 -12,18 0,0 Z', x: 210, y: 370, rot: 40, isRight: true, delay: 1250 },
+        { d: 'M 0,0 C 18,-10 32,-4 38,6 C 26,18 10,14 0,0 Z', x: 140, y: 330, rot: -60, isRight: false, delay: 1400 },
+        { d: 'M 0,0 C -18,-10 -32,-4 -38,6 C -26,18 -10,14 0,0 Z', x: 260, y: 340, rot: 55, isRight: true, delay: 1550 },
+        { d: 'M 0,0 C 14,-8 26,-2 30,5 C 20,14 8,12 0,0 Z', x: 160, y: 220, rot: -30, isRight: false, delay: 1700 },
+        { d: 'M 0,0 C -14,-8 -26,-2 -30,5 C -20,14 -8,12 0,0 Z', x: 240, y: 225, rot: 30, isRight: true, delay: 1800 }
+      ],
+
+      initBotanicalDOM: function() {
+        const stemsGroup = document.getElementById('stems-group');
+        const foliageGroup = document.getElementById('foliage-group');
+        if (!stemsGroup || !foliageGroup) return;
+
+        stemsGroup.innerHTML = '';
+        foliageGroup.innerHTML = '';
+
+        this.stemDefinitions.forEach(stem => {
+          const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          path.setAttribute('id', stem.id);
+          path.setAttribute('class', 'stem-path');
+          path.setAttribute('d', stem.d);
+          path.setAttribute('stroke-width', stem.width);
+          stemsGroup.appendChild(path);
+        });
+
+        this.leafDefinitions.forEach((leaf, idx) => {
+          const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          path.setAttribute('id', `leaf-${idx}`);
+          path.setAttribute('class', `botanical-leaf ${leaf.isRight ? 'leaf-right' : ''}`);
+          path.setAttribute('d', leaf.d);
+          path.setAttribute('transform', `translate(${leaf.x}, ${leaf.y}) rotate(${leaf.rot})`);
+          foliageGroup.appendChild(path);
+        });
+
+        this.buildFlowers();
+      },
+
+      buildFlowers: function() {
+        this.buildRose('flower-center', 16);
+        this.buildPeony('flower-left', 10);
+        this.buildBlossom('flower-right', 7);
+        this.buildBud('flower-accent-1', 5);
+        this.buildBud('flower-accent-2', 5);
+      },
+
+      buildRose: function(containerId, count) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = '';
+
+        const core = document.createElement('div');
+        core.className = 'flower-core';
+        container.appendChild(core);
+
+        const goldenAngle = 137.5;
+        const total = count || 16;
+        for (let i = 0; i < total; i++) {
+          const petal = document.createElement('div');
+          petal.className = 'petal petal-rose-center';
+          const size = 42 + (i * 3.4);
+          const rot = (i * goldenAngle) % 360;
+          const tilt = 14 + Math.min(i * 2.8, 56);
+          const spread = i * 1.0;
+
+          petal.style.width = `${size}px`;
+          petal.style.height = `${size * 1.18}px`;
+          petal.style.setProperty('--rot', `${rot}deg`);
+          petal.style.setProperty('--rx', `${tilt}deg`);
+          petal.style.setProperty('--ty', `-${spread}px`);
+          petal.style.transitionDelay = `${1100 + (i * 45)}ms`;
+          petal.style.zIndex = 25 - i;
+
+          if (i === 4 || i === 8 || i === 12) {
+            const dew = document.createElement('span');
+            dew.className = 'dewdrop';
+            petal.appendChild(dew);
+          }
+
+          container.appendChild(petal);
+        }
+      },
+
+      buildPeony: function(containerId, count) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = '';
+
+        const core = document.createElement('div');
+        core.className = 'flower-core';
+        container.appendChild(core);
+
+        const total = count || 10;
+        for (let i = 0; i < total; i++) {
+          const petal = document.createElement('div');
+          petal.className = 'petal petal-peony';
+          const size = 36 + (i * 3.0);
+          const rot = (i * 144) % 360;
+          const tilt = 20 + Math.min(i * 3.0, 52);
+
+          petal.style.width = `${size}px`;
+          petal.style.height = `${size * 1.08}px`;
+          petal.style.borderRadius = '50% 50% 45% 45%';
+          petal.style.setProperty('--rot', `${rot}deg`);
+          petal.style.setProperty('--rx', `${tilt}deg`);
+          petal.style.transitionDelay = `${1250 + (i * 50)}ms`;
+          petal.style.zIndex = 20 - i;
+
+          container.appendChild(petal);
+        }
+      },
+
+      buildBlossom: function(containerId, count) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = '';
+
+        const core = document.createElement('div');
+        core.className = 'flower-core';
+        container.appendChild(core);
+
+        const total = count || 7;
+        for (let i = 0; i < total; i++) {
+          const petal = document.createElement('div');
+          petal.className = 'petal petal-blossom';
+          const size = 34 + (i * 2.8);
+          const rot = (i * (360 / total));
+
+          petal.style.width = `${size}px`;
+          petal.style.height = `${size * 1.15}px`;
+          petal.style.borderRadius = '55% 45% 25% 25%';
+          petal.style.setProperty('--rot', `${rot}deg`);
+          petal.style.setProperty('--rx', '35deg');
+          petal.style.transitionDelay = `${1400 + (i * 55)}ms`;
+          petal.style.zIndex = 15 - i;
+
+          container.appendChild(petal);
+        }
+      },
+
+      buildBud: function(containerId, count) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = '';
+
+        for (let i = 0; i < count; i++) {
+          const petal = document.createElement('div');
+          petal.className = 'petal petal-rose-center';
+          const size = 20 + (i * 2.2);
+          const rot = (i * 60);
+
+          petal.style.width = `${size}px`;
+          petal.style.height = `${size * 1.3}px`;
+          petal.style.setProperty('--rot', `${rot}deg`);
+          petal.style.setProperty('--rx', '20deg');
+          petal.style.transitionDelay = `${1800 + (i * 60)}ms`;
+
+          container.appendChild(petal);
+        }
+      },
+
+      startBloomSequence: function(onComplete) {
+        const envelopeBox = document.getElementById('envelope-3d');
+        const envelopeScene = document.getElementById('envelope-scene');
+        const bloomScene = document.getElementById('bloom-scene');
+        const stage = document.getElementById('bouquet-stage');
+        const godRays = document.getElementById('god-rays');
+        const magicHalo = document.getElementById('magic-glow-halo');
+
+        if (envelopeBox) envelopeBox.classList.add('is-opened');
+        if (typeof AmbientEngine !== 'undefined') {
+          AmbientEngine.burstMagicSparks(50, 48);
+        }
+
+        if (godRays) godRays.classList.add('is-active');
+        if (magicHalo) magicHalo.classList.add('is-active');
+
+        setTimeout(() => {
+          if (envelopeScene) envelopeScene.classList.add('is-hidden');
+          if (bloomScene) bloomScene.classList.add('is-active');
+        }, 650);
+
+        const stems = document.querySelectorAll('.stem-path');
+        const leaves = document.querySelectorAll('.botanical-leaf');
+        const flowers = document.querySelectorAll('.flower-head');
+
+        stems.forEach((stem, idx) => {
+          const def = this.stemDefinitions[idx] || { delay: 100 };
+          setTimeout(() => {
+            stem.classList.add('grown');
+          }, def.delay + 600);
+        });
+
+        leaves.forEach((leaf, idx) => {
+          const def = this.leafDefinitions[idx] || { delay: 1200 };
+          setTimeout(() => {
+            leaf.classList.add('sprouted');
+          }, def.delay + 600);
+        });
+
+        flowers.forEach((flower, idx) => {
+          setTimeout(() => {
+            flower.classList.add('bloomed');
+          }, 1600 + (idx * 220));
+        });
+
+        setTimeout(() => {
+          if (stage) stage.classList.add('in-breeze');
+          if (typeof onComplete === 'function') onComplete();
+        }, 4200);
+
+        return "🌸 ¡Florecimiento activado con éxito! Mira cómo florece en pantalla.";
+      },
+
+      resetBloom: function() {
+        const stage = document.getElementById('bouquet-stage');
+        const envelopeBox = document.getElementById('envelope-3d');
+        const envelopeScene = document.getElementById('envelope-scene');
+        const bloomScene = document.getElementById('bloom-scene');
+        const godRays = document.getElementById('god-rays');
+        const magicHalo = document.getElementById('magic-glow-halo');
+
+        if (godRays) godRays.classList.remove('is-active');
+        if (magicHalo) magicHalo.classList.remove('is-active');
+        if (stage) stage.classList.remove('in-breeze');
+        if (bloomScene) {
+          bloomScene.classList.remove('is-active');
+          bloomScene.classList.remove('has-message');
+        }
+        if (envelopeScene) envelopeScene.classList.remove('is-hidden');
+        if (envelopeBox) envelopeBox.classList.remove('is-opened');
+
+        document.querySelectorAll('.stem-path').forEach(el => el.classList.remove('grown'));
+        document.querySelectorAll('.botanical-leaf').forEach(el => el.classList.remove('sprouted'));
+        document.querySelectorAll('.flower-head').forEach(el => el.classList.remove('bloomed'));
+
+        return "↺ Experiencia reiniciada al sobre inicial.";
+      }
+    };
+
+    /**
+     * SINTETIZADOR DE MÚSICA ROMÁNTICA Y REPRODUCTOR PERSONALIZADO
+     */
+    const RomanticAudio = {
+      ctx: null,
+      audioEl: null,
+      isPlaying: false,
+      melodyTimer: null,
+
+      init: function() {
+        if (!this.ctx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) {
+            this.ctx = new AudioContextClass();
+          }
+        }
+      },
+
+      playNote: function(freq, startTime, duration = 1.4) {
+        if (!this.ctx) return;
+        try {
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, startTime);
+
+          gain.gain.setValueAtTime(0, startTime);
+          gain.gain.linearRampToValueAtTime(0.14, startTime + 0.04);
+          gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+
+          osc.start(startTime);
+          osc.stop(startTime + duration);
+        } catch (e) {
+          console.warn("Audio nativo no disponible:", e);
+        }
+      },
+
+      playMelody: function() {
+        this.init();
+        if (!this.ctx) return;
+
+        if (this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+        this.isPlaying = true;
+
+        if (this.melodyTimer) {
+          clearTimeout(this.melodyTimer);
+          this.melodyTimer = null;
+        }
+
+        const notes = [
+          523.25, 659.25, 783.99, 880.00, 1046.50, 880.00, 783.99, 659.25,
+          587.33, 659.25, 783.99, 1046.50, 1174.66, 1046.50, 880.00, 783.99
+        ];
+        let step = 0;
+
+        const loop = () => {
+          if (!this.isPlaying) return;
+          const now = this.ctx.currentTime;
+          const freq = notes[step % notes.length];
+          this.playNote(freq, now, 1.6);
+
+          if (step % 4 === 0) {
+            this.playNote(freq * 0.5, now + 0.02, 2.0);
+          }
+
+          step++;
+          this.melodyTimer = setTimeout(loop, 460);
+        };
+        loop();
+      },
+
+      play: function() {
+        // Detener de inmediato cualquier reproducción previa para evitar superposición
+        this.stop();
+
+        const icon = document.getElementById('audio-icon');
+        const audioSrc = (typeof GIFT_CONFIG !== 'undefined' && GIFT_CONFIG.customAudioUrl) ? GIFT_CONFIG.customAudioUrl.trim() : "";
+        if (audioSrc !== "") {
+          if (!this.audioEl) {
+            this.audioEl = new Audio();
+            this.audioEl.loop = true;
+            // Garantizar repetición en bucle infinito automática cuando termine la canción
+            this.audioEl.addEventListener('ended', () => {
+              this.audioEl.currentTime = 0;
+              this.audioEl.play().catch(e => console.warn(e));
+            });
+          }
+          if (!this.audioEl.src.endsWith(audioSrc)) {
+            this.audioEl.src = audioSrc;
+            this.audioEl.load();
+          }
+          this.audioEl.currentTime = 0;
+          this.audioEl.play().then(() => {
+            this.isPlaying = true;
+            if (icon) icon.textContent = '🔊';
+          }).catch(err => {
+            console.warn("No se pudo reproducir el archivo de audio, usando cajita de música nativa:", err);
+            this.playMelody();
+            if (icon) icon.textContent = '🔊';
+          });
+          this.isPlaying = true;
+          if (icon) icon.textContent = '🔊';
+        } else {
+          this.playMelody();
+          if (icon) icon.textContent = '🔊';
+        }
+      },
+
+      pause: function() {
+        const icon = document.getElementById('audio-icon');
+        if (this.audioEl) {
+          this.audioEl.pause();
+        }
+        this.isPlaying = false;
+        if (this.melodyTimer) {
+          clearTimeout(this.melodyTimer);
+          this.melodyTimer = null;
+        }
+        if (this.ctx && this.ctx.state === 'running') {
+          this.ctx.suspend();
+        }
+        if (icon) icon.textContent = '🔇';
+      },
+
+      resume: function() {
+        const icon = document.getElementById('audio-icon');
+        if (this.audioEl && this.audioEl.src) {
+          this.audioEl.play().then(() => {
+            this.isPlaying = true;
+            if (icon) icon.textContent = '🔊';
+          }).catch(() => {
+            this.play();
+          });
+        } else {
+          this.play();
+        }
+      },
+
+      stop: function() {
+        this.pause();
+        if (this.audioEl) {
+          this.audioEl.currentTime = 0;
+        }
+      },
+
+      toggle: function() {
+        if (this.isPlaying) {
+          this.pause();
+        } else {
+          this.resume();
+        }
+      }
+    };
+
+    /**
+     * MOTOR AMBIENTAL Y PARTÍCULAS NOCTURNAS CINEMATOGRÁFICAS (TIKTOK AESTHETIC)
+     */
+    const AmbientEngine = {
+      container: null,
+
+      init: function() {
+        this.container = document.getElementById('ambient-particles');
+        if (!this.container) return;
+        this.container.innerHTML = '';
+        this.spawnAmbientElements();
+      },
+
+      spawnAmbientElements: function() {
+        if (!this.container) return;
+
+        // 1. Cielo de 18 estrellas titilantes optimizadas (hilo GPU puro)
+        for (let i = 0; i < 18; i++) {
+          const star = document.createElement('div');
+          star.className = 'twinkling-star';
+          const size = 1.6 + Math.random() * 2.2;
+          star.style.width = `${size}px`;
+          star.style.height = `${size}px`;
+          star.style.left = `${Math.random() * 98}%`;
+          star.style.top = `${Math.random() * 95}%`;
+          star.style.animationDelay = `${Math.random() * 3.5}s`;
+          star.style.animationDuration = `${2.8 + Math.random() * 2.5}s`;
+          this.container.appendChild(star);
+        }
+
+        // 2. Luciérnagas doradas sutiles aceleradas por hardware
+        for (let i = 0; i < 6; i++) {
+          const fly = document.createElement('div');
+          fly.className = 'firefly';
+          const size = 3 + Math.random() * 4;
+          fly.style.width = `${size}px`;
+          fly.style.height = `${size}px`;
+          fly.style.left = `${10 + Math.random() * 80}%`;
+          fly.style.top = `${30 + Math.random() * 60}%`;
+          fly.style.animationDelay = `${Math.random() * 5}s`;
+          fly.style.animationDuration = `${5 + Math.random() * 3}s`;
+          this.container.appendChild(fly);
+        }
+
+        // 3. Pétalos flotantes cayendo suavemente
+        for (let i = 0; i < 5; i++) {
+          const petal = document.createElement('div');
+          petal.className = 'falling-petal-bg';
+          const scale = 0.5 + Math.random() * 0.5;
+          petal.style.transform = `scale(${scale})`;
+          petal.style.left = `${Math.random() * 92}%`;
+          petal.style.animationDelay = `${Math.random() * 7}s`;
+          petal.style.animationDuration = `${7 + Math.random() * 4}s`;
+          this.container.appendChild(petal);
+        }
+      },
+
+      burstMagicSparks: function(originX, originY) {
+        if (!this.container) return;
+        const count = 14;
+        for (let i = 0; i < count; i++) {
+          const spark = document.createElement('div');
+          spark.className = 'magic-burst-spark';
+          spark.style.left = `${originX || 50}%`;
+          spark.style.top = `${originY || 45}%`;
+          this.container.appendChild(spark);
+
+          const angle = (i / count) * 360 * (Math.PI / 180);
+          const distance = 50 + Math.random() * 100;
+          const destX = Math.cos(angle) * distance;
+          const destY = Math.sin(angle) * distance;
+
+          requestAnimationFrame(() => {
+            spark.style.transform = `translate(calc(-50% + ${destX}px), calc(-50% + ${destY}px)) scale(${1 + Math.random() * 1.5})`;
+            spark.style.opacity = '1';
+
+            setTimeout(() => {
+              spark.style.opacity = '0';
+              setTimeout(() => spark.remove(), 700);
+            }, 600);
+          });
+        }
+      }
+    };
+
+    /**
+     * CONTROLADOR DE INTERACCIONES Y TRANSICIÓN DE ESCENAS
+     */
+    const GiftExperience = {
+      isBusy: false,
+
+      applyConfig: function() {
+        if (typeof GIFT_CONFIG === 'undefined') return;
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const paramRecipient = urlParams.get('para') || urlParams.get('to');
+        const paramSender = urlParams.get('de') || urlParams.get('from');
+        const paramMessage = urlParams.get('msg') || urlParams.get('mensaje');
+        const paramAudio = urlParams.get('audio') || urlParams.get('music');
+        if (paramAudio) {
+          GIFT_CONFIG.customAudioUrl = decodeURIComponent(paramAudio);
+        }
+
+        const recipientText = paramRecipient ? `Para ${paramRecipient}` : GIFT_CONFIG.recipientName;
+        const senderText = paramSender ? `Con todo mi cariño, ${paramSender}` : GIFT_CONFIG.senderName;
+        const messageText = paramMessage ? decodeURIComponent(paramMessage) : GIFT_CONFIG.mainMessage;
+
+        if (paramRecipient) {
+          document.title = `Un Regalo Especial Para ${paramRecipient} ✨`;
+        }
+
+        const elTeaser = document.getElementById('ui-teaser-text');
+        const elButtonText = document.querySelector('.btn-discover .btn-text');
+        const elRecipient = document.getElementById('ui-recipient');
+        const elMessage = document.getElementById('ui-main-message');
+        const elSender = document.getElementById('ui-sender');
+
+        if (elTeaser && GIFT_CONFIG.teaserText) elTeaser.textContent = GIFT_CONFIG.teaserText;
+        if (elButtonText && GIFT_CONFIG.buttonText) elButtonText.textContent = GIFT_CONFIG.buttonText;
+        if (elRecipient) elRecipient.textContent = recipientText;
+        if (elMessage) elMessage.textContent = messageText;
+        if (elSender) elSender.textContent = senderText;
+      },
+
+      init: function() {
+        this.applyConfig();
+        BotanicalEngine.initBotanicalDOM();
+        AmbientEngine.init();
+
+        const btnDiscover = document.getElementById('btn-discover');
+        const envelopeBox = document.getElementById('envelope-3d');
+        const btnReplay = document.getElementById('btn-replay');
+        const btnAudio = document.getElementById('btn-audio');
+
+        if (btnDiscover) {
+          btnDiscover.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.startExperience();
+          });
+        }
+
+        if (envelopeBox) {
+          envelopeBox.addEventListener('click', () => {
+            this.startExperience();
+          });
+        }
+
+        if (btnReplay) {
+          btnReplay.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.restartExperience();
+          });
+        }
+
+        if (btnAudio) {
+          btnAudio.addEventListener('click', (e) => {
+            e.stopPropagation();
+            RomanticAudio.toggle();
+          });
+        }
+      },
+
+      startExperience: function() {
+        if (this.isBusy) return;
+        this.isBusy = true;
+
+        // Iniciar música automáticamente con el toque/clic de apertura
+        RomanticAudio.play();
+
+        BotanicalEngine.startBloomSequence(() => {
+          this.revealMessageScene();
+        });
+      },
+
+      revealMessageScene: function() {
+        const bloomScene = document.getElementById('bloom-scene');
+        const messageScene = document.getElementById('message-scene');
+        const controlsBar = document.getElementById('controls-bar');
+
+        if (bloomScene) {
+          bloomScene.classList.add('has-message');
+        }
+
+        setTimeout(() => {
+          if (messageScene) messageScene.classList.add('is-visible');
+        }, 350);
+
+        setTimeout(() => {
+          if (controlsBar) controlsBar.classList.add('is-visible');
+          this.isBusy = false;
+        }, 1100);
+      },
+
+      restartExperience: function() {
+        if (this.isBusy) return;
+        this.isBusy = true;
+
+        const messageScene = document.getElementById('message-scene');
+        const controlsBar = document.getElementById('controls-bar');
+        const bloomScene = document.getElementById('bloom-scene');
+
+        if (messageScene) messageScene.classList.remove('is-visible');
+        if (controlsBar) controlsBar.classList.remove('is-visible');
+
+        // Cortar la música por completo al reiniciar para que no se superpongan audios
+        RomanticAudio.stop();
+
+        setTimeout(() => {
+          if (bloomScene) bloomScene.classList.remove('has-message');
+          BotanicalEngine.resetBloom();
+          this.isBusy = false;
+        }, 500);
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      GiftExperience.init();
+    });
+  </script>
+</body>
+</html>
