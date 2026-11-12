@@ -83,7 +83,7 @@ photos: [
 ```
 
 ### 3. Cómo cambiar la música:
-La música configurada es `golden_hour.mpeg` (JVKE), ubicada en la misma carpeta del proyecto.
+La música configurada es `Love1.mpeg`, ubicada en la misma carpeta del proyecto.
 - Si deseas cambiarla por otra canción, simplemente coloca tu archivo de audio (por ejemplo `mi_cancion.mp3`) en la carpeta y actualiza:
 
 ```javascript

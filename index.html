@@ -1520,7 +1520,7 @@
         <span class="chapter-dot" data-chapter="5" title="Capítulo 5: Gran Celebración"></span>
       </div>
 
-      <button id="btn-audio-toggle" class="btn-audio-control" type="button" aria-label="Silenciar o reactivar música" title="Música ambiental (Golden Hour)">
+      <button id="btn-audio-toggle" class="btn-audio-control" type="button" aria-label="Silenciar o reactivar música" title="Música ambiental (Love1)">
         <span id="audio-icon">🔊</span>
       </button>
     </header>
@@ -1846,9 +1846,9 @@
       recipient: "Sara",
       sender: "Luis",
 
-      // 2. MÚSICA PERSONALIZADA (golden_hour.mpeg)
+      // 2. MÚSICA PERSONALIZADA (Love1.mpeg)
       music: {
-        url: "golden_hour.mpeg", // Archivo de audio en la misma carpeta o enlace web
+        url: "Love1.mpeg", // Archivo de audio en la misma carpeta o enlace web
         volume: 0.85,
         loop: true
       },
@@ -1933,7 +1933,7 @@
 
       initMusic: function() {
         if (this.audioEl) return;
-        const src = (BIRTHDAY_CONFIG.music && BIRTHDAY_CONFIG.music.url) ? BIRTHDAY_CONFIG.music.url.trim() : "golden_hour.mpeg";
+        const src = (BIRTHDAY_CONFIG.music && BIRTHDAY_CONFIG.music.url) ? BIRTHDAY_CONFIG.music.url.trim() : "Love1.mpeg";
         this.audioEl = new Audio(src);
         this.audioEl.loop = true;
         this.audioEl.volume = BIRTHDAY_CONFIG.music.volume || 0.85;
