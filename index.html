@@ -3,56 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Un Regalo Especial Para Stephany ✨</title>
+  <title>¡Feliz Cumpleaños, Sara! ✨🎂</title>
 
   <!-- Metadatos Open Graph optimizados para vista previa en WhatsApp y redes sociales -->
-  <meta property="og:title" content="Un Regalo Especial Para Stephany 🌸">
-  <meta property="og:description" content="Stephany, tengo algo muy especial para ti... Toca para descubrirlo.">
+  <meta property="og:title" content="¡Feliz Cumpleaños, Sara! 🎂✨">
+  <meta property="og:description" content="Sara, hoy es un día especial... Preparé algo para ti. Toca para descubrir tu sorpresa.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#120624">
+  <meta name="theme-color" content="#130728">
 
-  <style id="app-styles">
+  <!-- Tipografías de alta gama (Playfair Display, Plus Jakarta Sans y Caveat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style id="birthday-styles">
     /* ==========================================================================
-       1. VARIABLES GLOBALES Y PALETA NOCTURNA LUMINISCENTE (TIKTOK AESTHETIC)
+       1. VARIABLES GLOBALES Y PALETA CELEBRATORIA ELEGANTE
        ========================================================================== */
     :root {
-      /* Fondo noche mágica y universo romántico */
-      --bg-deep-night: #06020c;
-      --bg-twilight-1: #130626;
-      --bg-twilight-2: #240b3b;
+      /* Fondo noche mágica y universo celebratorio */
+      --bg-dark-primary: #090214;
+      --bg-twilight-1: #15062c;
+      --bg-twilight-2: #240b45;
+      --bg-card-glass: rgba(19, 7, 38, 0.88);
+      --bg-card-border: rgba(255, 215, 0, 0.28);
 
-      /* Resplandores neón y bioluminiscencia */
-      --color-rose-glow: #ff2a7a;
-      --color-rose-radiant: #ff4d8d;
-      --color-rose-deep: #e6005c;
-      --color-rose-dark: #800033;
-      --color-rose-velvet: #4d001f;
+      /* Acentos dorados cálidos (alegría, celebración, luz) */
+      --gold-primary: #ffd166;
+      --gold-bright: #ffe600;
+      --gold-warm: #f4a261;
+      --gold-glow: rgba(255, 209, 102, 0.45);
 
-      /* Flores amarillas / doradas virales de TikTok */
-      --color-gold-bright: #ffe600;
-      --color-gold-warm: #ffb703;
-      --color-gold-glow: #ffd166;
-      --color-gold-deep: #fb8500;
+      /* Tonos lavanda, lila y rosa pastel sofisticados (afecto y ternura) */
+      --lavender-light: #e0d4fd;
+      --lavender-mid: #b39ddb;
+      --lavender-deep: #7e57c2;
+      --rose-soft: #f8bbd0;
+      --rose-glow: rgba(248, 187, 208, 0.4);
 
-      /* Tallos y follaje verde esmeralda luminoso */
-      --color-stem-glow: #38ef7d;
-      --color-stem-main: #11998e;
-      --color-leaf-bright: #4ade80;
-      --color-leaf-dark: #0f5132;
+      /* Verde esmeralda para detalles botánicos */
+      --emerald-glow: #38ef7d;
+      --emerald-mid: #10b981;
+      --emerald-deep: #065f46;
 
-      /* Detalles de lujo y texto */
-      --color-text-bright: #ffffff;
-      --color-text-gold: #ffeaa7;
-      --color-text-muted: #d1c4e9;
-      --color-card-dark: rgba(16, 7, 32, 0.92);
+      /* Textos */
+      --text-main: #ffffff;
+      --text-gold: #fff1c5;
+      --text-muted: #c7b8e6;
+      --text-dark: #2c1a4d;
 
-      /* Tipografías elegantes */
-      --font-romantic: "Playfair Display", "Didot", "Bodoni MT", "Georgia", serif;
-      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      /* Tipografías */
+      --font-display: "Playfair Display", Georgia, serif;
+      --font-handwriting: "Caveat", cursive, sans-serif;
+      --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-      /* Curvas elásticas avanzadas para movimiento orgánico */
+      /* Transiciones y cinemática */
       --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
-      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
       --ease-bloom: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -67,10 +74,10 @@
     }
 
     body {
-      background-color: var(--bg-deep-night);
+      background-color: var(--bg-dark-primary);
       background-image: 
-        radial-gradient(circle at 50% 25%, #240b3b 0%, #110522 50%, #05010a 100%);
-      color: var(--color-text-bright);
+        radial-gradient(circle at 50% 20%, #290d4e 0%, #130424 55%, #05010b 100%);
+      color: var(--text-main);
       font-family: var(--font-body);
       min-height: 100vh;
       min-height: 100dvh;
@@ -81,40 +88,41 @@
       perspective: 1200px;
     }
 
-    /* Contenedor tipo teléfono vertical (9:16) con halo de luz inmersivo */
+    /* Contenedor tipo teléfono vertical (9:16) con marco refinado */
     .experience-wrapper {
       position: relative;
       width: 100%;
-      max-width: 430px;
+      max-width: 440px;
       height: 100vh;
       height: 100dvh;
-      background: radial-gradient(circle at 50% 32%, #220a3a 0%, #120422 55%, #07010e 100%);
+      background: radial-gradient(circle at 50% 28%, #22093d 0%, #120422 60%, #06010d 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       overflow: hidden;
       box-shadow: 
-        0 0 80px rgba(255, 42, 122, 0.35),
-        0 0 140px rgba(255, 183, 3, 0.2),
+        0 0 60px rgba(179, 157, 219, 0.25),
+        0 0 120px rgba(255, 209, 102, 0.18),
         0 30px 90px rgba(0, 0, 0, 0.95);
       border-radius: 0;
     }
 
     @media (min-width: 480px) {
       .experience-wrapper {
-        height: 90vh;
-        max-height: 860px;
+        height: 92vh;
+        max-height: 870px;
         border-radius: 40px;
-        border: 2px solid rgba(255, 215, 0, 0.35);
+        border: 2px solid rgba(255, 209, 102, 0.35);
       }
     }
 
-    /* Rayos de luz dorada celestial (God Rays rotatorios) */
-    /* Rayos de luz celestial dorada (Optimizado para 60 FPS sin blur pesado) */
+    /* ==========================================================================
+       3. EFECTOS AMBIENTALES DE ILUMINACIÓN Y PARTÍCULAS
+       ========================================================================== */
     .god-rays-aura {
       position: absolute;
-      top: 32%;
+      top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 520px;
@@ -122,34 +130,25 @@
       background: conic-gradient(
         from 0deg,
         transparent 0deg,
-        rgba(255, 230, 100, 0.16) 15deg,
-        transparent 30deg,
-        rgba(255, 42, 122, 0.12) 50deg,
-        transparent 70deg,
-        rgba(255, 215, 0, 0.18) 95deg,
-        transparent 120deg,
-        rgba(255, 180, 50, 0.14) 145deg,
-        transparent 175deg,
-        rgba(255, 230, 100, 0.16) 195deg,
-        transparent 210deg,
-        rgba(255, 42, 122, 0.12) 230deg,
-        transparent 250deg,
-        rgba(255, 215, 0, 0.18) 275deg,
-        transparent 300deg,
-        rgba(255, 180, 50, 0.14) 325deg,
-        transparent 355deg
+        rgba(255, 209, 102, 0.14) 20deg,
+        transparent 40deg,
+        rgba(179, 157, 219, 0.12) 65deg,
+        transparent 90deg,
+        rgba(255, 209, 102, 0.16) 130deg,
+        transparent 160deg,
+        rgba(248, 187, 208, 0.13) 200deg,
+        transparent 235deg,
+        rgba(255, 209, 102, 0.15) 280deg,
+        transparent 315deg,
+        rgba(179, 157, 219, 0.12) 340deg,
+        transparent 360deg
       );
       border-radius: 50%;
       pointer-events: none;
       z-index: 1;
-      opacity: 0;
-      transition: opacity 1.8s ease;
-      will-change: transform, opacity;
-    }
-
-    .god-rays-aura.is-active {
-      opacity: 1;
-      animation: rotateGodRays 40s linear infinite;
+      opacity: 0.35;
+      animation: rotateGodRays 45s linear infinite;
+      will-change: transform;
     }
 
     @keyframes rotateGodRays {
@@ -157,125 +156,128 @@
       100% { transform: translate(-50%, -50%) rotate(360deg); }
     }
 
-    /* Halo mágico de resplandor central (Optimizado con degradado nativo sin blur pesado) */
-    .magic-glow-halo {
-      position: absolute;
-      top: 34%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 320px;
-      height: 320px;
-      background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, rgba(255, 42, 122, 0.25) 40%, rgba(255, 183, 3, 0.08) 65%, transparent 75%);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 2;
-      opacity: 0;
-      transition: opacity 1.5s ease;
-      will-change: transform, opacity;
-    }
-
-    .magic-glow-halo.is-active {
-      opacity: 1;
-      animation: pulseHaloGlow 4s ease-in-out infinite alternate;
-    }
-
-    @keyframes pulseHaloGlow {
-      0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.65; }
-      100% { transform: translate(-50%, -50%) scale(1.18); opacity: 0.95; }
-    }
-
-    /* Capa ambiental de estrellas y luciérnagas */
     .ambient-layer {
       position: absolute;
       inset: 0;
       pointer-events: none;
-      z-index: 3;
       overflow: hidden;
-      contain: layout style;
+      z-index: 2;
     }
 
-    /* Estrellas micro-titilantes (Animadas por opacidad pura = Cero lag) */
-    .twinkling-star {
+    .ambient-star {
       position: absolute;
+      background: #ffffff;
       border-radius: 50%;
-      background: #FFFFFF;
-      box-shadow: 0 0 5px 1px #FFF8E7;
-      pointer-events: none;
-      opacity: 0.2;
-      animation: starTwinkle 3.2s ease-in-out infinite alternate;
-      will-change: opacity;
+      box-shadow: 0 0 8px #ffd166;
+      animation: twinkleStar 3s ease-in-out infinite;
     }
 
-    @keyframes starTwinkle {
-      0% { opacity: 0.15; }
-      50% { opacity: 0.95; }
-      100% { opacity: 0.25; }
-    }
-
-    /* Luciérnagas doradas flotantes aceleradas por GPU */
-    .firefly {
+    .ambient-firefly {
       position: absolute;
+      background: #ffd166;
       border-radius: 50%;
-      background: #FFF7B2;
-      box-shadow: 0 0 10px 3px var(--color-gold-warm), 0 0 20px 5px rgba(255, 215, 0, 0.5);
-      pointer-events: none;
-      opacity: 0;
-      animation: fireflyFloat 6s ease-in-out infinite;
-      will-change: transform, opacity;
+      box-shadow: 0 0 12px #ffe600, 0 0 20px #f4a261;
+      animation: floatFirefly 7s ease-in-out infinite;
     }
 
-    @keyframes fireflyFloat {
-      0% { transform: translate3d(0, 0, 0) scale(0.4); opacity: 0; }
-      35% { opacity: 0.95; transform: translate3d(15px, -45px, 0) scale(1.1); }
-      70% { opacity: 0.8; transform: translate3d(-12px, -95px, 0) scale(0.85); }
-      100% { transform: translate3d(8px, -150px, 0) scale(0.2); opacity: 0; }
-    }
-
-    /* Pétalos flotantes cayendo en la noche */
-    .falling-petal-bg {
+    .ambient-confetti-piece {
       position: absolute;
-      width: 16px;
-      height: 22px;
-      background: radial-gradient(circle at 30% 30%, #FFD166 0%, #FF2A7A 60%, #800033 100%);
-      border-radius: 60% 40% 60% 40% / 50% 60% 40% 50%;
-      opacity: 0;
-      pointer-events: none;
-      filter: drop-shadow(0 0 10px rgba(255, 42, 122, 0.6));
-      animation: petalFallPath 10s linear infinite;
+      width: 8px;
+      height: 12px;
+      opacity: 0.85;
+      border-radius: 2px;
+      animation: fallConfetti linear infinite;
     }
 
-    @keyframes petalFallPath {
-      0% {
-        transform: translateY(-40px) translateX(0) rotateZ(0deg) rotateX(0deg);
-        opacity: 0;
-      }
-      15% { opacity: 0.9; }
-      50% {
-        transform: translateY(50vh) translateX(30px) rotateZ(180deg) rotateX(60deg);
-      }
-      85% { opacity: 0.8; }
-      100% {
-        transform: translateY(105vh) translateX(-25px) rotateZ(360deg) rotateX(120deg);
-        opacity: 0;
-      }
+    @keyframes twinkleStar {
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 0.95; transform: scale(1.3); }
     }
 
-    /* Estallido de chispas de estrellas al abrir el sobre */
-    .magic-burst-spark {
-      position: absolute;
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: #FFFFFF;
-      box-shadow: 0 0 16px 4px var(--color-gold-bright), 0 0 28px 8px var(--color-rose-glow);
-      pointer-events: none;
-      z-index: 50;
-      transform: translate(-50%, -50%) scale(0);
-      transition: all 0.9s cubic-bezier(0.1, 0.9, 0.2, 1);
+    @keyframes floatFirefly {
+      0% { transform: translate(0, 0) scale(0.8); opacity: 0.3; }
+      50% { transform: translate(25px, -35px) scale(1.2); opacity: 0.9; }
+      100% { transform: translate(-15px, -70px) scale(0.8); opacity: 0.2; }
+    }
+
+    @keyframes fallConfetti {
+      0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(850px) rotate(720deg); opacity: 0; }
     }
 
     /* ==========================================================================
-       3. ESCENA 1 Y 2: SOBRE ELEGANTE Y APERTURA 3D EN LA NOCHE
+       4. BARRA DE NAVEGACIÓN SUPERIOR (CAPÍTULOS + AUDIO)
+       ========================================================================== */
+    .top-nav-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 50;
+      pointer-events: auto;
+    }
+
+    /* Indicador de 5 capítulos */
+    .chapter-indicator {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      background: rgba(14, 5, 28, 0.6);
+      padding: 6px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 209, 102, 0.2);
+      backdrop-filter: blur(8px);
+    }
+
+    .chapter-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      transition: all 0.4s var(--ease-smooth);
+    }
+
+    .chapter-dot.active {
+      background: var(--gold-bright);
+      width: 18px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px var(--gold-glow);
+    }
+
+    .chapter-dot.completed {
+      background: var(--lavender-mid);
+    }
+
+    /* Botón de control de audio */
+    .btn-audio-control {
+      background: rgba(19, 7, 38, 0.75);
+      border: 1px solid rgba(255, 209, 102, 0.35);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.05rem;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn-audio-control:hover {
+      transform: scale(1.08);
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 15px var(--gold-glow);
+    }
+
+    /* ==========================================================================
+       5. GESTOR DE ESCENAS (TRANSICIONES FLUIDAS)
        ========================================================================== */
     .scene {
       position: absolute;
@@ -284,274 +286,482 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 24px;
-      transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+      padding: 70px 24px 30px;
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.96) translateY(12px);
+      transition: opacity 0.7s var(--ease-smooth), transform 0.7s var(--ease-smooth);
+      z-index: 10;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 209, 102, 0.3) transparent;
     }
 
-    .scene-envelope {
+    .scene::-webkit-scrollbar {
+      width: 4px;
+    }
+    .scene::-webkit-scrollbar-thumb {
+      background: rgba(255, 209, 102, 0.3);
+      border-radius: 4px;
+    }
+
+    .scene.is-active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) translateY(0);
       z-index: 20;
     }
 
-    .scene-envelope.is-hidden {
-      opacity: 0;
-      pointer-events: none;
-      transform: scale(0.85) translateY(60px);
-    }
-
-    /* Mensaje de expectativa inicial */
-    .teaser-wrapper {
-      margin-bottom: 28px;
-      text-align: center;
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-
-    .teaser-text {
-      font-family: var(--font-romantic);
-      font-size: 1.4rem;
-      font-style: italic;
-      color: var(--color-text-gold);
-      letter-spacing: 0.8px;
-      text-shadow: 0 0 16px rgba(255, 234, 167, 0.6), 0 2px 5px rgba(0,0,0,0.8);
-      animation: gentleBreathe 3s ease-in-out infinite;
-    }
-
-    @keyframes gentleBreathe {
-      0%, 100% { transform: scale(1); opacity: 0.9; }
-      50% { transform: scale(1.04); opacity: 1; text-shadow: 0 0 25px rgba(255, 215, 0, 0.9); }
-    }
-
-    /* Contenedor del Sobre 3D de lujo nocturno */
-    .envelope-box {
-      position: relative;
-      width: 280px;
-      height: 190px;
-      transform-style: preserve-3d;
-      perspective: 1000px;
-      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.85)), drop-shadow(0 0 25px rgba(255, 42, 122, 0.25));
-      transition: transform 0.8s var(--ease-smooth);
+    /* Botones primarios de navegación de escenas */
+    .btn-action-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #ffd166 0%, #f4a261 100%);
+      color: var(--text-dark);
+      font-family: var(--font-body);
+      font-size: 0.98rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
       cursor: pointer;
+      box-shadow: 
+        0 8px 24px rgba(244, 162, 97, 0.35),
+        0 0 20px rgba(255, 209, 102, 0.3);
+      transition: all 0.35s var(--ease-smooth);
+      text-decoration: none;
+      letter-spacing: 0.3px;
     }
 
-    .envelope-flap-back {
+    .btn-action-primary:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 
+        0 12px 30px rgba(244, 162, 97, 0.5),
+        0 0 30px rgba(255, 209, 102, 0.5);
+    }
+
+    .btn-action-primary:active {
+      transform: translateY(1px) scale(0.98);
+    }
+
+    /* ==========================================================================
+       6. ESCENA 1: SOBRE ELEGANTE 3D (UNA SORPRESA PARA SARA)
+       ========================================================================== */
+    .scene-envelope {
+      justify-content: space-between;
+      padding-bottom: 50px;
+    }
+
+    .envelope-teaser {
+      text-align: center;
+      margin-top: 15px;
+      max-width: 320px;
+    }
+
+    .teaser-subtitle {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      color: var(--gold-primary);
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+      text-shadow: 0 0 20px rgba(255, 209, 102, 0.3);
+    }
+
+    .teaser-desc {
+      font-size: 0.95rem;
+      color: var(--lavender-light);
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    /* Sobre 3D */
+    .envelope-container {
+      position: relative;
+      width: 250px;
+      height: 175px;
+      perspective: 1000px;
+      cursor: pointer;
+      margin: 20px auto;
+      transition: transform 0.3s ease;
+    }
+
+    .envelope-container:hover {
+      transform: translateY(-4px) scale(1.02);
+    }
+
+    .envelope-wrapper-3d {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #1c0836;
+      border-radius: 12px;
+      box-shadow: 
+        0 20px 45px rgba(0, 0, 0, 0.8),
+        0 0 35px rgba(179, 157, 219, 0.25);
+      border: 1px solid rgba(255, 209, 102, 0.3);
+    }
+
+    .envelope-back-wall {
       position: absolute;
       inset: 0;
-      background: #1b0722;
-      border-radius: 14px;
-      border: 1px solid rgba(255, 215, 0, 0.3);
+      background: linear-gradient(145deg, #18062f, #240a45);
+      border-radius: 12px;
     }
 
-    .inner-card {
+    /* Tarjeta interior que asoma */
+    .envelope-card-peek {
       position: absolute;
-      top: 10px;
+      top: 15px;
       left: 15px;
       right: 15px;
-      height: 160px;
-      background: linear-gradient(135deg, #FFFDF9 0%, #FFF5EB 100%);
-      border-radius: 10px;
-      border: 1.5px solid var(--color-gold-warm);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+      height: 145px;
+      background: linear-gradient(135deg, #fdfbf7 0%, #ede6d6 100%);
+      border-radius: 8px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      transform: translateY(0);
-      transition: transform 0.9s var(--ease-smooth);
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+      transition: transform 0.65s var(--ease-bloom);
       z-index: 2;
     }
 
-    .card-crest {
-      font-size: 2.2rem;
-      filter: drop-shadow(0 2px 6px rgba(255, 42, 122, 0.5));
-      animation: pulseCrest 2s ease-in-out infinite;
+    .card-peek-badge {
+      font-size: 1.8rem;
+      margin-bottom: 4px;
     }
 
-    @keyframes pulseCrest {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.18); }
+    .card-peek-text {
+      color: #3b1e54;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
 
-    .envelope-body-front {
+    /* Solapa frontal triangular */
+    .envelope-front-fold {
       position: absolute;
-      inset: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      clip-path: polygon(0 0, 50% 55%, 100% 0, 100% 100%, 0 100%);
+      background: linear-gradient(160deg, #2b0c50, #17042a);
+      border-radius: 0 0 12px 12px;
+      border-bottom: 1px solid rgba(255, 209, 102, 0.25);
       z-index: 3;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #2c0b2f 0%, #17041c 100%);
-      border: 1px solid rgba(255, 215, 0, 0.4);
-      clip-path: polygon(0% 0%, 50% 55%, 100% 0%, 100% 100%, 0% 100%);
-      box-shadow: inset 0 -4px 12px rgba(0, 0, 0, 0.6);
     }
 
+    /* Solapa superior interactiva */
     .envelope-flap-top {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 110px;
-      background: linear-gradient(180deg, #3d0f3a 0%, #220626 100%);
-      border: 1px solid rgba(255, 215, 0, 0.4);
-      clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+      right: 0;
+      height: 55%;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background: linear-gradient(180deg, #381263 0%, #20083c 100%);
       transform-origin: top center;
-      transform-style: preserve-3d;
-      transition: transform 0.9s var(--ease-smooth), z-index 0.3s;
+      transition: transform 0.7s var(--ease-smooth);
       z-index: 4;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      padding-bottom: 6px;
     }
 
+    /* Sello de lacre con corona de destellos */
     .wax-seal {
-      width: 46px;
-      height: 46px;
-      background: radial-gradient(circle at 35% 35%, #ff2a7a 0%, #b51752 70%, #520021 100%);
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 44px;
+      height: 44px;
+      background: radial-gradient(circle at 35% 35%, #ffd166 0%, #b8860b 80%);
       border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       box-shadow: 
-        0 4px 14px rgba(0, 0, 0, 0.6),
-        0 0 20px rgba(255, 42, 122, 0.7),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5);
-      position: relative;
-      margin-bottom: -18px;
+        0 4px 12px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(255, 209, 102, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3d2300;
+      font-size: 1.15rem;
+      font-weight: bold;
+      border: 2px solid #fff5cc;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
 
-    .seal-icon {
-      color: var(--color-gold-bright);
-      font-size: 1.25rem;
-      filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.9));
-    }
-
-    /* Estados de apertura 3D */
-    .envelope-box.is-opened .envelope-flap-top {
-      transform: rotateX(180deg);
+    .envelope-container.is-opened .envelope-flap-top {
+      transform: rotateX(175deg);
       z-index: 1;
     }
 
-    .envelope-box.is-opened .inner-card {
-      transform: translateY(-85px);
-    }
-
-    /* Botón animado "Descubrir sorpresa" con resplandor neón */
-    .action-wrapper {
-      margin-top: 38px;
-      z-index: 10;
-    }
-
-    .btn-discover {
-      position: relative;
-      border: 1.5px solid var(--color-gold-bright);
-      background: linear-gradient(135deg, #ff2a7a 0%, #d80064 50%, #99003d 100%);
-      color: #FFFFFF;
-      font-family: var(--font-body);
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      padding: 15px 38px;
-      border-radius: 999px;
-      cursor: pointer;
-      box-shadow: 
-        0 8px 30px rgba(255, 42, 122, 0.6),
-        0 0 35px rgba(255, 215, 0, 0.5),
-        inset 0 1px 2px rgba(255, 255, 255, 0.5);
-      outline: none;
-      transition: all 0.35s var(--ease-smooth);
-      overflow: hidden;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-    }
-
-    .btn-discover:hover, .btn-discover:focus-visible {
-      transform: translateY(-3px) scale(1.04);
-      box-shadow: 
-        0 12px 35px rgba(255, 42, 122, 0.8),
-        0 0 45px rgba(255, 215, 0, 0.7);
-    }
-
-    .btn-discover:active {
-      transform: translateY(1px) scale(0.97);
-    }
-
-    .btn-glow {
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.7) 10%, transparent 60%);
-      opacity: 0;
-      pointer-events: none;
-      animation: buttonGlowSweep 3.5s infinite;
-    }
-
-    @keyframes buttonGlowSweep {
-      0% { transform: translate(-30%, -30%) rotate(0deg); opacity: 0; }
-      40% { opacity: 0.7; }
-      70% { opacity: 0; }
-      100% { transform: translate(30%, 30%) rotate(360deg); opacity: 0; }
+    .envelope-container.is-opened .envelope-card-peek {
+      transform: translateY(-65px);
     }
 
     /* ==========================================================================
-       4. ESCENA 3: RAMO FLORAL BOTÁNICO LUMINISCENTE (EL CENTRO ABSOLUTO)
+       7. ESCENA 2: TORTA DE CUMPLEAÑOS Y PEDIR UN DESEO
        ========================================================================== */
-    .scene-bloom {
+    .scene-cake {
+      text-align: center;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+
+    .cake-header {
+      margin-top: 10px;
+    }
+
+    .cake-title {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      color: var(--gold-bright);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      text-shadow: 0 0 25px rgba(255, 209, 102, 0.4);
+    }
+
+    .cake-subtitle {
+      font-size: 0.92rem;
+      color: var(--lavender-light);
+      line-height: 1.5;
+      max-width: 330px;
+      margin: 0 auto;
+    }
+
+    /* Componente de la Torta de Cumpleaños SVG / CSS */
+    .cake-stage {
+      position: relative;
+      width: 260px;
+      height: 220px;
+      margin: 15px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    /* Velas y llamas animadas */
+    .candles-group {
+      display: flex;
+      gap: 28px;
+      margin-bottom: -4px;
+      z-index: 5;
+    }
+
+    .candle {
+      position: relative;
+      width: 12px;
+      height: 48px;
+      background: repeating-linear-gradient(
+        45deg,
+        #f8bbd0,
+        #f8bbd0 6px,
+        #ffd166 6px,
+        #ffd166 12px
+      );
+      border-radius: 4px 4px 2px 2px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .candle-wick {
+      position: absolute;
+      top: -6px;
+      left: 5px;
+      width: 2px;
+      height: 6px;
+      background: #555;
+    }
+
+    .candle-flame {
+      position: absolute;
+      top: -24px;
+      left: -2px;
+      width: 16px;
+      height: 24px;
+      background: radial-gradient(ellipse at 50% 80%, #ffffff 0%, #ffeb3b 40%, #ff5722 85%);
+      border-radius: 50% 50% 35% 35%;
+      box-shadow: 
+        0 0 16px #ffeb3b,
+        0 0 30px #ff9800;
+      transform-origin: 50% 90%;
+      animation: flameFlicker 1.8s ease-in-out infinite alternate;
+      transition: all 0.6s var(--ease-smooth);
+    }
+
+    .candle:nth-child(2) .candle-flame {
+      animation-delay: -0.6s;
+    }
+    .candle:nth-child(3) .candle-flame {
+      animation-delay: -1.2s;
+    }
+
+    @keyframes flameFlicker {
+      0% { transform: scale(1) rotate(-2deg); }
+      50% { transform: scale(1.08, 0.94) rotate(3deg); }
+      100% { transform: scale(0.96, 1.04) rotate(-1deg); }
+    }
+
+    /* Estado de velas apagadas */
+    .candle.blown-out .candle-flame {
+      opacity: 0;
+      transform: scale(0) translateY(-10px);
+      box-shadow: none;
+    }
+
+    /* Humito que sube al apagar */
+    .smoke-puff {
+      position: absolute;
+      top: -20px;
+      left: 3px;
+      width: 6px;
+      height: 6px;
+      background: rgba(220, 220, 255, 0.7);
+      border-radius: 50%;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .candle.blown-out .smoke-puff {
+      animation: smokeRise 1.4s ease-out forwards;
+    }
+
+    @keyframes smokeRise {
+      0% { opacity: 0.8; transform: translateY(0) scale(1); }
+      50% { opacity: 0.5; transform: translate(4px, -18px) scale(2.2); }
+      100% { opacity: 0; transform: translate(-3px, -36px) scale(3.5); }
+    }
+
+    /* Pisos de la torta */
+    .cake-tier-top {
+      width: 160px;
+      height: 60px;
+      background: linear-gradient(180deg, #ede7f6 0%, #d1c4e9 60%, #b39ddb 100%);
+      border-radius: 12px 12px 0 0;
+      position: relative;
+      box-shadow: inset 0 6px 10px rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      z-index: 3;
+    }
+
+    .cake-frosting-drips {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding-top: 15px;
+      height: 18px;
+      background: #fdfbf7;
+      border-radius: 12px 12px 6px 6px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .cake-tier-bottom {
+      width: 220px;
+      height: 75px;
+      background: linear-gradient(180deg, #fce4ec 0%, #f8bbd0 50%, #f48fb1 100%);
+      border-radius: 14px 14px 0 0;
+      position: relative;
+      box-shadow: inset 0 8px 12px rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      z-index: 2;
+    }
+
+    .cake-plate {
+      width: 250px;
+      height: 16px;
+      background: linear-gradient(90deg, #d4af37, #ffe082, #d4af37);
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    /* Mensaje del deseo revelado */
+    .wish-result-card {
+      background: var(--bg-card-glass);
+      border: 1px solid var(--gold-primary);
+      border-radius: 16px;
+      padding: 14px 20px;
+      max-width: 340px;
+      margin: 10px auto;
       opacity: 0;
+      transform: translateY(15px);
+      transition: all 0.6s var(--ease-bounce);
       pointer-events: none;
-      transform: translateY(25px) scale(0.92);
-      transition: opacity 1.2s var(--ease-smooth), transform 1.2s var(--ease-spring);
-      z-index: 15;
     }
 
-    .scene-bloom.is-active {
+    .wish-result-card.is-visible {
       opacity: 1;
+      transform: translateY(0);
       pointer-events: auto;
-      transform: translateY(0) scale(1);
+      box-shadow: 0 8px 30px rgba(255, 209, 102, 0.25);
     }
 
-    .scene-bloom.has-message {
-      /* El ramo se mantiene imponente en la parte superior-central sin ser tapado */
-      transform: translateY(-16px) scale(0.95);
+    .wish-result-text {
+      font-size: 0.94rem;
+      color: var(--text-gold);
+      line-height: 1.5;
+      font-style: italic;
     }
 
+    /* ==========================================================================
+       8. ESCENA 3: RAMO FLORAL BIOLUMINISCENTE QUE FLORECE
+       ========================================================================== */
+    .scene-bloom {
+      justify-content: space-between;
+      padding-bottom: 30px;
+    }
+
+    .bloom-header {
+      text-align: center;
+      margin-top: 10px;
+      max-width: 340px;
+    }
+
+    .bloom-title {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      color: var(--gold-bright);
+      margin-bottom: 6px;
+    }
+
+    .bloom-desc {
+      font-size: 0.9rem;
+      color: var(--lavender-light);
+      line-height: 1.45;
+    }
+
+    /* Escenario del ramo */
     .bouquet-stage {
       position: relative;
-      width: 360px;
-      height: 480px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform-origin: bottom center;
-      transform: translateZ(0);
-      will-change: transform;
+      width: 320px;
+      height: 380px;
+      margin: 5px auto;
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease;
     }
 
     .bouquet-stage.in-breeze {
-      animation: naturalBreezeSway 6.5s ease-in-out infinite alternate;
+      animation: bouquetBreeze 8s ease-in-out infinite alternate;
     }
 
-    @keyframes naturalBreezeSway {
-      0% { transform: rotate(0deg) translateY(0); }
-      35% { transform: rotate(1.4deg) translateY(-3px); }
-      70% { transform: rotate(-1.5deg) translateY(2px); }
-      100% { transform: rotate(0.9deg) translateY(-1px); }
+    @keyframes bouquetBreeze {
+      0% { transform: rotate(-1.5deg) translateY(0); }
+      50% { transform: rotate(1.5deg) translateY(-4px); }
+      100% { transform: rotate(-1deg) translateY(2px); }
     }
 
-    /* Lienzo botánico de tallos y hojas en SVG con resplandor neón */
     .botanical-canvas {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
-      overflow: visible;
-      filter: drop-shadow(0 0 12px rgba(56, 239, 125, 0.75));
+      pointer-events: none;
+      z-index: 2;
     }
 
     .stem-path {
@@ -561,6 +771,7 @@
       stroke-linejoin: round;
       stroke-dasharray: 600;
       stroke-dashoffset: 600;
+      filter: drop-shadow(0 0 6px rgba(56, 239, 125, 0.4));
       transition: stroke-dashoffset 2.4s var(--ease-bloom);
     }
 
@@ -570,327 +781,506 @@
 
     .botanical-leaf {
       fill: url(#leafGradient);
-      transform-box: fill-box;
-      transform-origin: bottom left;
-      transform: scale(0) rotate(15deg);
       opacity: 0;
-      transition: transform 1.2s var(--ease-spring), opacity 0.8s ease;
-      filter: drop-shadow(0 0 10px rgba(74, 222, 128, 0.6));
-    }
-
-    .botanical-leaf.leaf-right {
-      transform-origin: bottom right;
-      transform: scale(0) rotate(-15deg);
+      transform-origin: 0 0;
+      transform: scale(0);
+      transition: transform 1.2s var(--ease-bloom), opacity 0.8s ease;
+      filter: drop-shadow(0 0 5px rgba(56, 239, 125, 0.3));
     }
 
     .botanical-leaf.sprouted {
-      transform: scale(1) rotate(0deg);
-      opacity: 1;
+      opacity: 0.92;
+      transform: scale(1);
     }
 
-    /* Capa de flores tridimensionales bioluminiscentes */
+    /* Capa de flores 3D */
     .flowers-layer {
       position: absolute;
       inset: 0;
       pointer-events: none;
-      transform-style: preserve-3d;
+      z-index: 5;
     }
 
     .flower-head {
       position: absolute;
       transform-style: preserve-3d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       transform: scale(0);
-      transition: transform 1.8s var(--ease-spring);
+      transition: transform 1.5s var(--ease-bloom);
     }
 
     .flower-head.bloomed {
       transform: scale(1);
     }
 
-    /* Posiciones armoniosas de cada flor en el ramo */
-    .flower-main-rose {
-      top: 105px;
-      left: 50%;
-      margin-left: -60px;
-      width: 120px;
-      height: 120px;
-      z-index: 10;
-    }
+    /* Posiciones de las flores principales del ramo */
+    .flower-center { top: 95px; left: 160px; }
+    .flower-left   { top: 145px; left: 85px; }
+    .flower-right  { top: 150px; left: 235px; }
+    .flower-top-l  { top: 60px; left: 110px; }
+    .flower-top-r  { top: 65px; left: 215px; }
 
-    .flower-left-peony {
-      top: 170px;
-      left: 32px;
-      width: 95px;
-      height: 95px;
-      z-index: 8;
-    }
-
-    .flower-right-blossom {
-      top: 180px;
-      right: 32px;
-      width: 92px;
-      height: 92px;
-      z-index: 8;
-    }
-
-    .flower-top-left-bud {
-      top: 60px;
-      left: 65px;
-      width: 62px;
-      height: 62px;
-      z-index: 6;
-    }
-
-    .flower-top-right-bud {
-      top: 65px;
-      right: 65px;
-      width: 62px;
-      height: 62px;
-      z-index: 6;
-    }
-
-    /* Pétalos individuales 3D ultra-luminosos (Animados exclusivamente por GPU transform) */
+    /* Pétalos 3D */
     .petal {
       position: absolute;
-      border-radius: 65% 35% 60% 40% / 50% 60% 40% 50%;
-      transform-origin: bottom center;
-      transform: scale(0) rotate(0deg);
-      transition: transform 1.5s var(--ease-spring);
-      backface-visibility: hidden;
-      contain: layout style paint;
+      top: 50%;
+      left: 50%;
+      transform-origin: 50% 100%;
+      border-radius: 50% 50% 40% 40%;
+      opacity: 0;
+      transform: translate(-50%, -100%) rotate(var(--rot, 0deg)) rotateX(0deg) scale(0.2);
+      transition: transform 1.6s var(--ease-bloom), opacity 0.8s ease;
     }
 
     .flower-head.bloomed .petal {
-      transform: scale(1) rotate(var(--rot)) translateY(var(--ty, 0px)) rotateX(var(--rx, 0deg));
+      opacity: 0.96;
+      transform: translate(-50%, -100%) rotate(var(--rot, 0deg)) rotateX(var(--rx, 35deg)) translateY(var(--ty, 0px)) scale(1);
     }
 
-    /* Perlas de rocío cristalinas en los pétalos */
-    .dewdrop {
+    /* Estilos florales */
+    .petal-golden-peony {
+      background: radial-gradient(circle at 40% 30%, #fff7cc 0%, #ffd166 40%, #f4a261 100%);
+      box-shadow: 0 0 15px rgba(255, 209, 102, 0.5);
+    }
+
+    .petal-lavender-blossom {
+      background: radial-gradient(circle at 40% 30%, #ffffff 0%, #d1c4e9 45%, #9575cd 100%);
+      box-shadow: 0 0 15px rgba(179, 157, 219, 0.45);
+    }
+
+    .petal-soft-rose {
+      background: radial-gradient(circle at 40% 30%, #fff0f5 0%, #f8bbd0 45%, #ec407a 100%);
+      box-shadow: 0 0 14px rgba(248, 187, 208, 0.4);
+    }
+
+    .flower-core {
       position: absolute;
-      width: 6px;
-      height: 6px;
-      background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 45%, rgba(180, 220, 255, 0.4) 100%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+      height: 18px;
+      background: radial-gradient(circle, #fff 0%, #ffd166 70%, #d4af37 100%);
       border-radius: 50%;
-      box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6);
-      top: 18%;
-      right: 22%;
-      pointer-events: none;
+      box-shadow: 0 0 15px #ffd166;
+      z-index: 30;
+    }
+
+    /* Tarjeta inferior con el mensaje del ramo */
+    .bloom-card-panel {
+      background: var(--bg-card-glass);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 20px;
+      padding: 14px 20px;
+      max-width: 350px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      margin-top: -10px;
+    }
+
+    .bloom-card-quote {
+      font-size: 0.93rem;
+      color: var(--text-gold);
+      font-style: italic;
+      line-height: 1.45;
+      margin-bottom: 6px;
+    }
+
+    .bloom-card-sub {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================================
+       9. ESCENA 4: RECUERDOS (POLAROIDS) Y LA CARTA ESPECIAL
+       ========================================================================== */
+    .scene-memories {
+      justify-content: flex-start;
+      padding-top: 65px;
+      padding-bottom: 40px;
+      gap: 20px;
+    }
+
+    .memories-title {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      color: var(--gold-primary);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .memories-sub {
+      font-size: 0.88rem;
+      color: var(--lavender-light);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    /* Pestañas de selector: Polaroid / Carta */
+    .memories-nav-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      background: rgba(14, 5, 28, 0.7);
+      padding: 4px;
+      border-radius: 25px;
+      border: 1px solid rgba(255, 209, 102, 0.2);
+    }
+
+    .tab-btn {
+      padding: 8px 18px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #ffd166, #f4a261);
+      color: var(--text-dark);
+      box-shadow: 0 4px 15px rgba(244, 162, 97, 0.35);
+    }
+
+    /* Sección A: Galería Polaroid */
+    .polaroid-gallery-container {
+      width: 100%;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .polaroid-card {
+      width: 250px;
+      background: #ffffff;
+      padding: 12px 12px 20px;
+      border-radius: 4px;
+      box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.4),
+        0 2px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.35s var(--ease-bounce);
+      position: relative;
+    }
+
+    .polaroid-card:nth-child(1) { transform: rotate(-2.5deg); }
+    .polaroid-card:nth-child(2) { transform: rotate(2deg); }
+    .polaroid-card:nth-child(3) { transform: rotate(-1.5deg); }
+
+    .polaroid-card:hover {
+      transform: scale(1.05) rotate(0deg) !important;
+      box-shadow: 
+        0 18px 35px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(255, 209, 102, 0.4);
       z-index: 10;
     }
 
-    /* Núcleo de flor (Sol en miniatura que irradia luz dorada) */
-    .flower-core {
+    /* Cinta adhesiva en la parte superior del polaroid */
+    .polaroid-tape {
       position: absolute;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 35% 30%, #FFFFFF 0%, #FFF3B0 30%, #FFB703 75%, #D48B00 100%);
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 75px;
+      height: 20px;
+      background: rgba(255, 248, 220, 0.65);
+      backdrop-filter: blur(2px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+      border-left: 2px dashed rgba(0,0,0,0.1);
+      border-right: 2px dashed rgba(0,0,0,0.1);
+    }
+
+    .polaroid-photo-frame {
+      width: 100%;
+      height: 180px;
+      background: #17072a;
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .polaroid-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Marcador elegante cuando no hay foto subida */
+    .polaroid-placeholder-art {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #2c0e52 0%, #17042c 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-primary);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .placeholder-icon {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+    }
+
+    .placeholder-hint {
+      font-size: 0.75rem;
+      color: var(--lavender-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .polaroid-caption {
+      margin-top: 10px;
+      text-align: center;
+      color: #3b1e54;
+      font-family: var(--font-handwriting);
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    /* Sección B: Carta Especial */
+    .letter-parchment-container {
+      width: 100%;
+      max-width: 370px;
+      background: linear-gradient(160deg, #fdfbf7 0%, #f5eedc 100%);
+      border-radius: 18px;
+      padding: 24px 22px;
       box-shadow: 
-        0 0 25px 8px var(--color-gold-bright),
-        0 0 50px 16px var(--color-gold-warm),
-        0 0 75px 22px rgba(255, 42, 122, 0.6),
-        inset 0 1px 4px #FFFFFF;
-      z-index: 20;
-      transform: scale(0);
-      transition: transform 1.2s var(--ease-spring);
-      animation: coreGlowPulse 2.5s ease-in-out infinite alternate;
+        0 15px 40px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(255, 209, 102, 0.25);
+      border: 1px solid #d4af37;
+      color: #2b1838;
+      position: relative;
     }
 
-    @keyframes coreGlowPulse {
-      0% { box-shadow: 0 0 20px 6px var(--color-gold-bright), 0 0 40px 12px var(--color-gold-warm); }
-      100% { box-shadow: 0 0 35px 12px var(--color-gold-bright), 0 0 70px 24px rgba(255, 42, 122, 0.85); }
+    .letter-crest {
+      text-align: center;
+      color: #b8860b;
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
     }
 
-    .flower-head.bloomed .flower-core {
+    .letter-title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: #3a1547;
+      text-align: center;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .letter-body {
+      font-size: 0.94rem;
+      line-height: 1.65;
+      color: #3d2645;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-height: 340px;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+
+    .letter-body p {
+      text-indent: 14px;
+    }
+
+    .letter-signature {
+      margin-top: 16px;
+      text-align: right;
+      font-family: var(--font-handwriting);
+      font-size: 1.45rem;
+      color: #6a1b9a;
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       10. ESCENA 5: CELEBRACIÓN FINAL (UN NUEVO AÑO EXTRAORDINARIO)
+       ========================================================================== */
+    .scene-finale {
+      text-align: center;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+
+    .finale-badge {
+      display: inline-block;
+      background: rgba(255, 209, 102, 0.15);
+      border: 1px solid var(--gold-primary);
+      padding: 6px 16px;
+      border-radius: 20px;
+      color: var(--gold-bright);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .finale-main-title {
+      font-family: var(--font-display);
+      font-size: 1.65rem;
+      color: #ffffff;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      text-shadow: 0 0 25px rgba(255, 209, 102, 0.4);
+    }
+
+    .finale-main-title span {
+      color: var(--gold-bright);
+      display: block;
+    }
+
+    .finale-card {
+      background: var(--bg-card-glass);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 22px;
+      padding: 22px 20px;
+      max-width: 350px;
+      margin: 15px auto;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+    }
+
+    .finale-subtext {
+      font-size: 0.95rem;
+      color: var(--lavender-light);
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+
+    .finale-farewell {
+      font-size: 0.96rem;
+      color: var(--text-gold);
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+
+    .finale-sign {
+      font-family: var(--font-handwriting);
+      font-size: 1.55rem;
+      color: var(--gold-bright);
+      font-weight: 700;
+      text-shadow: 0 0 15px rgba(255, 209, 102, 0.4);
+    }
+
+    .btn-replay-experience {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .btn-replay-experience:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-color: var(--gold-primary);
+      transform: scale(1.03);
+    }
+
+    /* Modal / Lightbox para ver polaroids en tamaño completo */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 1, 14, 0.92);
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      padding: 20px;
+    }
+
+    .lightbox-modal.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-content {
+      background: #ffffff;
+      padding: 15px 15px 25px;
+      border-radius: 8px;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      transform: scale(0.9);
+      transition: transform 0.4s var(--ease-bounce);
+    }
+
+    .lightbox-modal.is-active .lightbox-content {
       transform: scale(1);
     }
 
-    /* Estilo Rosa Majestuosa Central (Neón magenta & terciopelo rubí - Acelerado por GPU) */
-    .petal-rose-center {
-      background: radial-gradient(circle at 45% 25%, #FFF0F5 0%, #FF2E93 40%, #D80064 75%, #7A0034 100%);
-      box-shadow: 
-        inset 0 2px 8px rgba(255, 255, 255, 0.85),
-        inset 0 -4px 10px rgba(0, 0, 0, 0.6),
-        0 0 22px rgba(255, 46, 147, 0.7),
-        0 8px 18px rgba(0, 0, 0, 0.7);
-      will-change: transform;
-    }
-
-    /* Estilo Peonía / Flor Amarilla Radiante de TikTok */
-    .petal-peony {
-      border-radius: 50% 50% 45% 45%;
-      background: radial-gradient(circle at 40% 25%, #FFFCEB 0%, #FFE600 40%, #FFB703 75%, #E85D04 100%);
-      box-shadow: 
-        inset 0 2px 8px rgba(255, 255, 255, 0.9),
-        inset 0 -4px 10px rgba(0, 0, 0, 0.5),
-        0 0 24px rgba(255, 215, 0, 0.8),
-        0 8px 18px rgba(0, 0, 0, 0.7);
-      will-change: transform;
-    }
-
-    /* Estilo Flor silvestre luminosa */
-    .petal-blossom {
-      border-radius: 55% 45% 30% 30%;
-      background: radial-gradient(circle at 35% 35%, #FFFFFF 0%, #FF70A6 55%, #E01E5A 90%, #85002C 100%);
-      box-shadow: 
-        inset 0 2px 8px rgba(255, 255, 255, 0.85),
-        0 0 20px rgba(255, 112, 166, 0.7),
-        0 8px 18px rgba(0, 0, 0, 0.7);
-      will-change: transform;
-    }
-
-    /* ==========================================================================
-       5. ESCENA 4: DEDICATORIA DE CRISTAL OSCURO EN LA BASE (SIN TAPAR EL RAMO)
-       ========================================================================== */
-    .scene-message {
+    .lightbox-close-btn {
       position: absolute;
-      bottom: 54px; /* Anclado en la base para que las flores reinen arriba */
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      padding: 0 16px;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(40px) scale(0.92);
-      transition: opacity 1.2s var(--ease-smooth), transform 1.2s var(--ease-spring);
-      z-index: 25;
+      top: -16px;
+      right: -16px;
+      width: 36px;
+      height: 36px;
+      background: #ffd166;
+      color: #2b1838;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
 
-    .scene-message.is-visible {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0) scale(1);
-    }
-
-    .message-card-panel {
-      position: relative;
+    .lightbox-img-box {
       width: 100%;
-      max-width: 360px;
-      background: var(--color-card-dark);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1.5px solid rgba(255, 215, 0, 0.65);
-      border-radius: 22px;
-      padding: 14px 18px 16px;
-      text-align: center;
-      box-shadow: 
-        0 16px 45px rgba(0, 0, 0, 0.8),
-        0 0 35px rgba(255, 215, 0, 0.35),
-        0 0 60px rgba(255, 42, 122, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.25);
-      animation: messageCardBreathe 4s ease-in-out infinite alternate;
-    }
-
-    @keyframes messageCardBreathe {
-      0% { box-shadow: 0 16px 45px rgba(0,0,0,0.8), 0 0 25px rgba(255, 215, 0, 0.3); }
-      100% { box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 45px rgba(255, 215, 0, 0.55), 0 0 70px rgba(255, 42, 122, 0.35); }
-    }
-
-    .message-ornament {
-      color: var(--color-gold-bright);
-      font-size: 1rem;
-      opacity: 0.9;
-      margin: 1px 0;
-      letter-spacing: 4px;
-      text-shadow: 0 0 10px var(--color-gold-warm);
-    }
-
-    .message-recipient {
-      font-family: var(--font-romantic);
-      font-size: 1.28rem;
-      font-weight: 700;
-      color: var(--color-text-gold);
-      margin-bottom: 5px;
-      letter-spacing: 0.6px;
-      text-shadow: 0 0 14px rgba(255, 234, 167, 0.7), 0 2px 4px rgba(0,0,0,0.8);
-    }
-
-    .message-body {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #FFFFFF;
-      margin: 5px 0 8px;
-      padding: 0 4px;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.9);
-    }
-
-    .message-sender {
-      font-family: var(--font-romantic);
-      font-style: italic;
-      font-size: 1.05rem;
-      color: var(--color-gold-glow);
-      font-weight: 600;
-      text-shadow: 0 0 10px rgba(255, 209, 102, 0.6);
-    }
-
-    /* ==========================================================================
-       6. ESCENA 5: CONTROLES DE NAVEGACIÓN Y REPETICIÓN
-       ========================================================================== */
-    .controls-bar {
-      position: absolute;
-      bottom: 14px;
+      height: 280px;
+      background: #17072a;
+      border-radius: 4px;
+      overflow: hidden;
       display: flex;
-      gap: 14px;
-      z-index: 30;
-      opacity: 0;
-      transform: translateY(15px);
-      transition: all 0.6s var(--ease-smooth);
-      pointer-events: none;
-    }
-
-    .controls-bar.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-
-    .btn-control {
-      display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      background: rgba(22, 9, 36, 0.85);
-      backdrop-filter: blur(10px);
-      border: 1.5px solid rgba(255, 215, 0, 0.45);
-      color: var(--color-text-gold);
-      font-family: var(--font-body);
-      font-size: 0.86rem;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 999px;
-      cursor: pointer;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6), 0 0 14px rgba(255, 215, 0, 0.25);
-      transition: all 0.25s ease;
     }
 
-    .btn-control:hover {
-      background: rgba(36, 15, 60, 0.95);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.8), 0 0 22px rgba(255, 215, 0, 0.5);
-      border-color: var(--color-gold-bright);
+    .lightbox-caption {
+      margin-top: 15px;
+      color: #3b1e54;
+      font-family: var(--font-handwriting);
+      font-size: 1.5rem;
+      font-weight: 700;
     }
 
-    .btn-control:active {
-      transform: translateY(1px);
-    }
-
-    .btn-audio {
-      width: 38px;
-      height: 38px;
-      padding: 0;
-      border-radius: 50%;
-    }
-
-    /* ==========================================================================
-       7. ACCESIBILIDAD: PREFERS-REDUCED-MOTION
-       ========================================================================== */
+    /* Modo de reducción de movimiento */
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+      *, ::before, ::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
@@ -901,177 +1291,622 @@
 <body>
 
   <!-- Contenedor principal de la experiencia (formato vertical / móvil primero) -->
-  <div id="experience-container" class="experience-wrapper" role="main" aria-label="Tarjeta floral interactiva">
+  <div id="experience-container" class="experience-wrapper" role="main" aria-label="Experiencia de cumpleaños para Sara">
 
-    <!-- Rayos de luz celestial dorada (Efecto Waooo de iluminación de fondo) -->
+    <!-- Rayos de luz celestial dorada y lavanda -->
     <div id="god-rays" class="god-rays-aura" aria-hidden="true"></div>
 
-    <!-- Resplandor mágico de aura central -->
-    <div id="magic-glow-halo" class="magic-glow-halo" aria-hidden="true"></div>
-
-    <!-- Capa ambiental de partículas flotantes, estrellas y luciérnagas -->
+    <!-- Capa ambiental de partículas flotantes, estrellas y chispas -->
     <div id="ambient-particles" class="ambient-layer" aria-hidden="true"></div>
 
-    <!-- Escena 1 y 2: Sobre elegante interactivo con efecto 3D -->
-    <section id="envelope-scene" class="scene scene-envelope" aria-label="Sobre de regalo">
-      
-      <!-- Mensaje inicial de expectativa -->
-      <div class="teaser-wrapper">
-        <p id="ui-teaser-text" class="teaser-text">Stephany, tengo algo muy especial para ti...</p>
+    <!-- Barra de navegación superior: Capítulos y Control de Audio -->
+    <header class="top-nav-bar" aria-label="Navegación y controles">
+      <div class="chapter-indicator" role="progressbar" aria-label="Progreso de capítulos" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+        <span class="chapter-dot active" data-chapter="1" title="Capítulo 1: La Sorpresa"></span>
+        <span class="chapter-dot" data-chapter="2" title="Capítulo 2: El Deseo"></span>
+        <span class="chapter-dot" data-chapter="3" title="Capítulo 3: Un Detalle que Florece"></span>
+        <span class="chapter-dot" data-chapter="4" title="Capítulo 4: Recuerdos y Palabras"></span>
+        <span class="chapter-dot" data-chapter="5" title="Capítulo 5: Gran Celebración"></span>
+      </div>
+
+      <button id="btn-audio-toggle" class="btn-audio-control" type="button" aria-label="Silenciar o reactivar música" title="Música ambiental (Golden Hour)">
+        <span id="audio-icon">🔊</span>
+      </button>
+    </header>
+
+    <!-- ======================================================================
+         ESCENA 1: SOBRE ELEGANTE 3D (UNA SORPRESA PARA SARA)
+         ====================================================================== -->
+    <section id="scene-1" class="scene scene-envelope is-active" aria-label="Capítulo 1: Una sorpresa para Sara">
+      <div class="envelope-teaser">
+        <h1 id="ui-teaser-title" class="teaser-subtitle">Sara, hoy es un día especial...</h1>
+        <p id="ui-teaser-desc" class="teaser-desc">Preparé algo para ti. Espero que te guste esta pequeña sorpresa.</p>
       </div>
 
       <!-- Componente 3D del Sobre -->
-      <div id="envelope-3d" class="envelope-box">
-        <!-- Solapa posterior interior -->
-        <div class="envelope-flap-back"></div>
-        
-        <!-- Tarjeta interna que se asoma antes de florecer -->
-        <div id="inner-letter-card" class="inner-card">
-          <div class="card-crest">🌸</div>
-        </div>
+      <div id="envelope-3d" class="envelope-container" role="button" tabindex="0" aria-label="Toca para abrir el sobre de cumpleaños">
+        <div class="envelope-wrapper-3d">
+          <div class="envelope-back-wall"></div>
+          
+          <div id="envelope-card-peek" class="envelope-card-peek">
+            <span class="card-peek-badge">🎂</span>
+            <span class="card-peek-text">PARA SARA</span>
+          </div>
 
-        <!-- Cuerpo frontal del sobre -->
-        <div class="envelope-body-front"></div>
+          <div class="envelope-front-fold"></div>
 
-        <!-- Solapa superior animada con perspectiva 3D -->
-        <div id="envelope-flap" class="envelope-flap-top">
-          <!-- Sello decorativo con lacre y destello dorado -->
-          <div class="wax-seal">
-            <span class="seal-icon">✦</span>
+          <div class="envelope-flap-top">
+            <div class="wax-seal">
+              <span>✦</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Botón de apertura interactivo con resplandor neón -->
-      <div class="action-wrapper">
-        <button id="btn-discover" class="btn-discover" type="button" aria-label="Descubrir sorpresa">
-          <span class="btn-text">Descubrir sorpresa</span>
-          <span class="btn-glow" aria-hidden="true"></span>
+      <div class="action-footer">
+        <button id="btn-open-envelope" class="btn-action-primary" type="button">
+          <span>Descubrir sorpresa</span>
+          <span>✨</span>
         </button>
       </div>
     </section>
 
-    <!-- Escena 3: Contenedor botánico floral progresivo (SVG generativo y pétalos) -->
-    <section id="bloom-scene" class="scene scene-bloom" aria-label="Ramo floral interactivo" aria-hidden="true">
-      <div id="bouquet-stage" class="bouquet-stage">
-        <!-- SVG para tallos, ramas y hojas orgánicas -->
-        <svg id="botanical-svg" class="botanical-canvas" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+    <!-- ======================================================================
+         ESCENA 2: TORTA DE CUMPLEAÑOS Y PEDIR UN DESEO
+         ====================================================================== -->
+    <section id="scene-2" class="scene scene-cake" aria-label="Capítulo 2: ¡Feliz Cumpleaños!" aria-hidden="true">
+      <div class="cake-header">
+        <h2 id="ui-cake-title" class="cake-title">¡FELIZ CUMPLEAÑOS, SARA!</h2>
+        <p id="ui-cake-sub" class="cake-subtitle">
+          Hoy celebramos un año más de tu vida, una nueva oportunidad para sonreír, crecer, cumplir sueños y vivir momentos extraordinarios.
+        </p>
+      </div>
+
+      <!-- Torta elegante de cumpleaños con velas interactivas -->
+      <div class="cake-stage" aria-label="Torta de cumpleaños con velas encendidas">
+        <div class="candles-group" id="candles-group">
+          <!-- Vela 1 -->
+          <div class="candle">
+            <div class="candle-wick"></div>
+            <div class="candle-flame"></div>
+            <div class="smoke-puff"></div>
+          </div>
+          <!-- Vela 2 (Central) -->
+          <div class="candle">
+            <div class="candle-wick"></div>
+            <div class="candle-flame"></div>
+            <div class="smoke-puff"></div>
+          </div>
+          <!-- Vela 3 -->
+          <div class="candle">
+            <div class="candle-wick"></div>
+            <div class="candle-flame"></div>
+            <div class="smoke-puff"></div>
+          </div>
+        </div>
+
+        <div class="cake-tier-top">
+          <div class="cake-frosting-drips"></div>
+        </div>
+        <div class="cake-tier-bottom"></div>
+        <div class="cake-plate"></div>
+      </div>
+
+      <!-- Tarjeta del deseo revelado -->
+      <div id="wish-result-card" class="wish-result-card" aria-live="polite">
+        <p id="ui-wish-revealed" class="wish-result-text">
+          Que todos esos deseos que guardas en tu corazón encuentren el camino para hacerse realidad. ✨
+        </p>
+      </div>
+
+      <div class="action-footer">
+        <button id="btn-make-wish" class="btn-action-primary" type="button">
+          <span>Pedir un deseo</span>
+          <span>✨</span>
+        </button>
+        <button id="btn-goto-scene-3" class="btn-action-primary" type="button" style="display: none;">
+          <span>Continuar a tu sorpresa</span>
+          <span>➔</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ESCENA 3: UN DETALLE QUE FLORECE (RAMO BIOLUMINISCENTE)
+         ====================================================================== -->
+    <section id="scene-3" class="scene scene-bloom" aria-label="Capítulo 3: Un detalle que florece" aria-hidden="true">
+      <div class="bloom-header">
+        <h2 id="ui-bloom-title" class="bloom-title">Un detalle que florece 🌸</h2>
+        <p class="bloom-desc">Flores de luz preparadas para iluminar este día especial</p>
+      </div>
+
+      <!-- Escenario botánico generativo con tallos y pétalos 3D -->
+      <div id="bouquet-stage" class="bouquet-stage" aria-hidden="true">
+        <svg id="botanical-svg" class="botanical-canvas" viewBox="0 0 320 380" preserveAspectRatio="xMidYMid meet">
           <defs>
-            <!-- Gradientes para tallos y hojas verde esmeralda luminosos -->
             <linearGradient id="stemGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-              <stop offset="0%" stop-color="#0f5132" />
-              <stop offset="30%" stop-color="#198754" />
-              <stop offset="70%" stop-color="#20c997" />
+              <stop offset="0%" stop-color="#065f46" />
+              <stop offset="40%" stop-color="#10b981" />
               <stop offset="100%" stop-color="#38ef7d" />
             </linearGradient>
             <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#86efac" />
-              <stop offset="45%" stop-color="#22c55e" />
-              <stop offset="100%" stop-color="#0f5132" />
+              <stop offset="0%" stop-color="#a7f3d0" />
+              <stop offset="50%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#047857" />
             </linearGradient>
           </defs>
-          <!-- Grupo de tallos orgánicos -->
-          <g id="stems-group" class="stems-layer"></g>
-          <!-- Grupo de follaje y hojas secundarias -->
-          <g id="foliage-group" class="foliage-layer"></g>
+          <g id="stems-group"></g>
+          <g id="foliage-group"></g>
         </svg>
 
-        <!-- Capa de flores 3D compuestas con pétalos volumétricos bioluminiscentes -->
         <div id="flowers-layer" class="flowers-layer">
-          <!-- Flor Central (Rosa majestuosa neón rubí) -->
-          <div class="flower-head flower-main-rose" id="flower-center"></div>
-          <!-- Flor Izquierda (Flor Amarilla Radiante de TikTok) -->
-          <div class="flower-head flower-left-peony" id="flower-left"></div>
-          <!-- Flor Derecha (Flor silvestre luminosa) -->
-          <div class="flower-head flower-right-blossom" id="flower-right"></div>
-          <!-- Flores y capullos de acompañamiento superior -->
-          <div class="flower-head flower-top-left-bud" id="flower-accent-1"></div>
-          <div class="flower-head flower-top-right-bud" id="flower-accent-2"></div>
+          <div class="flower-head flower-center" id="flower-center"></div>
+          <div class="flower-head flower-left" id="flower-left"></div>
+          <div class="flower-head flower-right" id="flower-right"></div>
+          <div class="flower-head flower-top-l" id="flower-top-l"></div>
+          <div class="flower-head flower-top-r" id="flower-top-r"></div>
         </div>
       </div>
-    </section>
 
-    <!-- Escena 4: Mensaje y dedicatoria personalizada -->
-    <section id="message-scene" class="scene scene-message" aria-label="Mensaje especial" aria-hidden="true">
-      <div class="message-card-panel">
-        <div class="message-ornament top-ornament">❦ ✦ ❦</div>
-        <h2 id="ui-recipient" class="message-recipient">Para Stephany</h2>
-        <p id="ui-main-message" class="message-body">
-          Las cosas más bonitas no necesitan una ocasión especial para existir. Solo el deseo de verte sonreír, Stephany.
+      <!-- Panel con la frase de cariño y celebración -->
+      <div class="bloom-card-panel">
+        <p id="ui-bloom-quote" class="bloom-card-quote">
+          «Porque las personas especiales merecen detalles que hagan florecer sus días.»
         </p>
-        <p id="ui-sender" class="message-sender">Con todo mi cariño, Luis</p>
-        <div class="message-ornament bottom-ornament">❦ ✦ ❦</div>
+        <p id="ui-bloom-sub" class="bloom-card-sub">
+          Este pequeño detalle es una forma de desearte muchas alegrías y recordarte cuánto se puede apreciar a una persona.
+        </p>
+      </div>
+
+      <div class="action-footer">
+        <button id="btn-goto-scene-4" class="btn-action-primary" type="button">
+          <span>Ver recuerdos y carta</span>
+          <span>➔</span>
+        </button>
       </div>
     </section>
 
-    <!-- Escena 5: Controles de repetición y ambientación -->
-    <nav id="controls-bar" class="controls-bar" aria-label="Controles de la experiencia">
-      <button id="btn-replay" class="btn-control" type="button" aria-label="Repetir animación" title="Volver a vivir la sorpresa">
-        <span class="control-icon">↺</span>
-        <span class="control-text">Repetir</span>
-      </button>
-      <button id="btn-audio" class="btn-control btn-audio" type="button" aria-label="Silenciar o reactivar sonido" title="Silenciar / Activar sonido">
-        <span id="audio-icon" class="control-icon">🔊</span>
-      </button>
-    </nav>
+    <!-- ======================================================================
+         ESCENA 4: RECUERDOS (POLAROIDS) Y LA CARTA ESPECIAL
+         ====================================================================== -->
+    <section id="scene-4" class="scene scene-memories" aria-label="Capítulo 4: Recuerdos y una carta para ti" aria-hidden="true">
+      <div class="memories-header">
+        <h2 id="ui-memories-title" class="memories-title">Recuerdos y Palabras</h2>
+        <p id="ui-memories-sub" class="memories-sub">Un espacio creado especialmente para ti</p>
+
+        <!-- Selector de pestañas: Galería o Carta -->
+        <div class="memories-nav-tabs" role="tablist">
+          <button id="tab-polaroids" class="tab-btn active" role="tab" aria-selected="true" type="button">Fotografías 📷</button>
+          <button id="tab-letter" class="tab-btn" role="tab" aria-selected="false" type="button">Tu Carta ✉️</button>
+        </div>
+      </div>
+
+      <!-- Sección A: Galería Polaroid -->
+      <div id="view-polaroids" class="polaroid-gallery-container" role="tabpanel">
+        <!-- Tarjeta Polaroid 1 -->
+        <div class="polaroid-card" data-photo-index="0" role="button" tabindex="0" title="Toca para ampliar">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-photo-frame">
+            <div class="polaroid-placeholder-art" id="photo-box-0">
+              <span class="placeholder-icon">🎉</span>
+              <span class="placeholder-hint">Espacio para Foto</span>
+            </div>
+          </div>
+          <p class="polaroid-caption" id="photo-caption-0">Momentos de alegría ✨</p>
+        </div>
+
+        <!-- Tarjeta Polaroid 2 -->
+        <div class="polaroid-card" data-photo-index="1" role="button" tabindex="0" title="Toca para ampliar">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-photo-frame">
+            <div class="polaroid-placeholder-art" id="photo-box-1">
+              <span class="placeholder-icon">🌟</span>
+              <span class="placeholder-hint">Espacio para Foto</span>
+            </div>
+          </div>
+          <p class="polaroid-caption" id="photo-caption-1">Nuevos sueños por cumplir 🎯</p>
+        </div>
+
+        <!-- Tarjeta Polaroid 3 -->
+        <div class="polaroid-card" data-photo-index="2" role="button" tabindex="0" title="Toca para ampliar">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-photo-frame">
+            <div class="polaroid-placeholder-art" id="photo-box-2">
+              <span class="placeholder-icon">🎂</span>
+              <span class="placeholder-hint">Espacio para Foto</span>
+            </div>
+          </div>
+          <p class="polaroid-caption" id="photo-caption-2">Un año extraordinario 💖</p>
+        </div>
+      </div>
+
+      <!-- Sección B: Carta Especial -->
+      <div id="view-letter" class="letter-parchment-container" role="tabpanel" style="display: none;">
+        <div class="letter-crest">❦ ✦ ❦</div>
+        <h3 id="ui-letter-title" class="letter-title">Unas palabras para ti</h3>
+
+        <div id="ui-letter-body" class="letter-body">
+          <p>Sara, en este día tan especial quería tomarme un momento para desearte lo mejor.</p>
+          <p>Espero que esta nueva etapa de tu vida venga acompañada de muchas alegrías, oportunidades, aprendizajes y sueños cumplidos.</p>
+          <p>Que nunca te falten motivos para sonreír, fuerzas para seguir adelante y personas que valoren lo especial que eres.</p>
+          <p>Disfruta muchísimo tu día, celebra cada logro y recuerda que mereces cosas bonitas.</p>
+          <p>¡Que tengas un cumpleaños maravilloso!</p>
+        </div>
+
+        <p class="letter-signature">Con aprecio, Luis</p>
+      </div>
+
+      <div class="action-footer" style="margin-top: 10px;">
+        <button id="btn-goto-scene-5" class="btn-action-primary" type="button">
+          <span>Ver sorpresa final</span>
+          <span>➔</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ESCENA 5: CELEBRACIÓN FINAL (UN NUEVO AÑO EXTRAORDINARIO)
+         ====================================================================== -->
+    <section id="scene-5" class="scene scene-finale" aria-label="Capítulo 5: Gran Celebración Final" aria-hidden="true">
+      <div class="finale-header">
+        <span class="finale-badge">✦ Celebración de Vida ✦</span>
+        <h2 id="ui-finale-title" class="finale-main-title">
+          QUE ESTE NUEVO AÑO DE VIDA
+          <span>SEA EXTRAORDINARIO</span>
+        </h2>
+      </div>
+
+      <div class="finale-card">
+        <p id="ui-finale-sub" class="finale-subtext">
+          Que esté lleno de nuevas oportunidades, grandes alegrías, metas alcanzadas, momentos inolvidables y muchas razones para sonreír.
+        </p>
+        <p id="ui-finale-farewell" class="finale-farewell">
+          «Nunca dejes de soñar, aprender, crecer y disfrutar de cada etapa de tu vida. ¡Feliz cumpleaños, Sara!»
+        </p>
+        <div class="message-ornament" style="color: var(--gold-primary); margin-bottom: 10px;">❦ ✦ ❦</div>
+        <p id="ui-finale-signature" class="finale-sign">Con mucho cariño y aprecio, Luis</p>
+      </div>
+
+      <div class="action-footer">
+        <button id="btn-replay-all" class="btn-replay-experience" type="button">
+          <span>↺</span>
+          <span>Volver a vivir la sorpresa</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Lightbox para ampliar fotografías Polaroid -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visor de fotografía">
+      <div class="lightbox-content">
+        <button id="btn-lightbox-close" class="lightbox-close-btn" type="button" aria-label="Cerrar visor">✕</button>
+        <div id="lightbox-img-box" class="lightbox-img-box"></div>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+    </div>
 
   </div>
 
-  <script id="floral-engine">
+  <!-- ==========================================================================
+       MOTOR JAVASCRIPT: CONFIGURACIÓN, SONIDO, FLORES Y NAVEGACIÓN
+       ========================================================================== -->
+  <script id="birthday-engine">
     /* ==========================================================================
-       🌸 SECCIÓN DE PERSONALIZACIÓN DEL REGALO (EDITA AQUÍ FÁCILMENTE)
+       🌸 OBJETO CENTRAL DE CONFIGURACIÓN DEL CUMPLEAÑOS (EDITA AQUÍ FÁCILMENTE)
        ==========================================================================
-       Modifica libremente los textos, nombres, dedicatoria, música y colores.
+       Modifica libremente los nombres, dedicatorias, fotografías y música.
        Todos los cambios se aplicarán de inmediato a la experiencia interactiva.
     */
-    const GIFT_CONFIG = {
-      // 1. NOMBRES Y DEDICATORIA
-      recipientName: "Para Stephany", // Nombre de Stephany grabado en la experiencia
-      senderName: "Con todo mi cariño, Luis", // Tu nombre y firma grabados
+    const BIRTHDAY_CONFIG = {
+      // 1. PERSONAS
+      recipient: "Sara",
+      sender: "Luis",
 
-      // 2. TEXTOS DE LA EXPERIENCIA
-      teaserText: "Stephany, tengo algo muy especial para ti...", // Frase inicial en el sobre
-      buttonText: "Descubrir sorpresa",            // Texto del botón animado
-      mainMessage: "Las cosas más bonitas no necesitan una ocasión especial para existir. Solo el deseo de verte sonreír, Stephany.", // Mensaje dedicado a Stephany
+      // 2. MÚSICA PERSONALIZADA (golden_hour.mpeg)
+      music: {
+        url: "golden_hour.mpeg", // Archivo de audio en la misma carpeta o enlace web
+        volume: 0.85,
+        loop: true
+      },
 
-      // 3. MÚSICA PERSONALIZADA (MP3, MPEG O ENLACE)
-      // Si tienes un archivo de audio (ejemplo: 'golden_hour.mpeg'), colócalo en la misma carpeta.
-      // O pega un enlace directo a un audio en la web (ej: 'https://.../musica.mp3').
-      // Si no encuentra el archivo, reproducirá suavemente la melodía mágica nativa integrada.
-      customAudioUrl: "golden_hour.mpeg",
+      // 3. TEXTOS POR ESCENAS
+      scene1: {
+        teaserTitle: "Sara, hoy es un día especial...",
+        teaserDesc: "Preparé algo para ti. Espero que te guste esta pequeña sorpresa.",
+        buttonText: "Descubrir sorpresa"
+      },
 
-      // 4. PALETA DE COLORES PRINCIPALES (en formato HEX)
-      colors: {
-        roseAccent: "#FF2A7A",     // Rosa neón principal de las flores
-        rosePastel: "#FFB4C4",     // Rosa suave de los pétalos
-        sageGreen: "#38EF7D",      // Verde esmeralda luminoso de tallos y hojas
-        goldAccent: "#FFE600"      // Tono dorado radiante de los destellos
+      scene2: {
+        title: "¡FELIZ CUMPLEAÑOS, SARA!",
+        subtitle: "Hoy celebramos un año más de tu vida, una nueva oportunidad para sonreír, crecer, cumplir sueños y vivir momentos extraordinarios.",
+        wishRevealed: "Que todos esos deseos que guardas en tu corazón encuentren el camino para hacerse realidad. ✨"
+      },
+
+      scene3: {
+        quote: "«Porque las personas especiales merecen detalles que hagan florecer sus días.»",
+        subtext: "Este pequeño detalle es una forma de desearte muchas alegrías y recordarte cuánto se puede apreciar a una persona."
+      },
+
+      scene4: {
+        title: "Recuerdos y Palabras",
+        subtitle: "Un espacio creado especialmente para ti",
+        // FOTOGRAFÍAS: Para agregar fotos reales, pon el nombre del archivo (ej: "sara1.jpg") o enlace web.
+        // Si lo dejas vacío (""), se mostrará una elegante tarjeta ilustrada de celebración.
+        photos: [
+          {
+            url: "", 
+            caption: "Momentos de alegría ✨",
+            icon: "🎉"
+          },
+          {
+            url: "", 
+            caption: "Nuevos sueños por cumplir 🎯",
+            icon: "🌟"
+          },
+          {
+            url: "", 
+            caption: "Un año extraordinario 💖",
+            icon: "🎂"
+          }
+        ],
+        letterTitle: "Unas palabras para ti",
+        letterParagraphs: [
+          "Sara, en este día tan especial quería tomarme un momento para desearte lo mejor.",
+          "Espero que esta nueva etapa de tu vida venga acompañada de muchas alegrías, oportunidades, aprendizajes y sueños cumplidos.",
+          "Que nunca te falten motivos para sonreír, fuerzas para seguir adelante y personas que valoren lo especial que eres.",
+          "Disfruta muchísimo tu día, celebra cada logro y recuerda que mereces cosas bonitas.",
+          "¡Que tengas un cumpleaños maravilloso!"
+        ],
+        letterSign: "Con mucho aprecio, Luis"
+      },
+
+      scene5: {
+        titlePrefix: "QUE ESTE NUEVO AÑO DE VIDA",
+        titleHighlight: "SEA EXTRAORDINARIO",
+        subtitle: "Que esté lleno de nuevas oportunidades, grandes alegrías, metas alcanzadas, momentos inolvidables y muchas razones para sonreír.",
+        farewell: "«Nunca dejes de soñar, aprender, crecer y disfrutar de cada etapa de tu vida. ¡Feliz cumpleaños, Sara!»",
+        signature: "Con mucho cariño y aprecio, Luis"
       }
     };
 
     /**
-     * MOTOR BOTÁNICO GENERATIVO (ETAPA 3)
-     * Construye tallos de curvas bézier orgánicas, hojas y pétalos 3D bioluminiscentes.
+     * MOTOR DE AUDIO Y EFECTOS SONOROS (WEB AUDIO API + HTML5 AUDIO)
+     */
+    const AudioEngine = {
+      audioEl: null,
+      isPlaying: false,
+      isMuted: false,
+      ctx: null,
+
+      initContext: function() {
+        if (!this.ctx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) {
+            this.ctx = new AudioContextClass();
+          }
+        }
+      },
+
+      initMusic: function() {
+        if (this.audioEl) return;
+        const src = (BIRTHDAY_CONFIG.music && BIRTHDAY_CONFIG.music.url) ? BIRTHDAY_CONFIG.music.url.trim() : "golden_hour.mpeg";
+        this.audioEl = new Audio(src);
+        this.audioEl.loop = true;
+        this.audioEl.volume = BIRTHDAY_CONFIG.music.volume || 0.85;
+
+        // Bucle continuo de seguridad
+        this.audioEl.addEventListener('ended', () => {
+          this.audioEl.currentTime = 0;
+          this.audioEl.play().catch(e => console.warn(e));
+        });
+      },
+
+      playMusic: function() {
+        this.initMusic();
+        this.initContext();
+        if (this.ctx && this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+
+        const icon = document.getElementById('audio-icon');
+        this.audioEl.play().then(() => {
+          this.isPlaying = true;
+          this.isMuted = false;
+          if (icon) icon.textContent = '🔊';
+        }).catch(err => {
+          console.warn("No se pudo iniciar la música automáticamente, se reproducirá con la siguiente interacción:", err);
+          this.isPlaying = false;
+        });
+      },
+
+      pauseMusic: function() {
+        if (this.audioEl) {
+          this.audioEl.pause();
+        }
+        this.isPlaying = false;
+        this.isMuted = true;
+        const icon = document.getElementById('audio-icon');
+        if (icon) icon.textContent = '🔇';
+      },
+
+      stopAndResetMusic: function() {
+        if (this.audioEl) {
+          this.audioEl.pause();
+          this.audioEl.currentTime = 0;
+        }
+        this.isPlaying = false;
+      },
+
+      toggleMusic: function() {
+        if (this.isPlaying) {
+          this.pauseMusic();
+        } else {
+          this.playMusic();
+        }
+      },
+
+      // Efecto sonoro: campana mágica de interacción
+      playChimeSound: function() {
+        this.initContext();
+        if (!this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(880, now); // Nota La5
+          osc.frequency.exponentialRampToValueAtTime(1760, now + 0.35);
+
+          gain.gain.setValueAtTime(0, now);
+          gain.gain.linearRampToValueAtTime(0.12, now + 0.04);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.45);
+
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(now);
+          osc.stop(now + 0.45);
+        } catch (e) {
+          console.warn("Audio Context chime:", e);
+        }
+      },
+
+      // Efecto sonoro: soplar velas con destellos
+      playCandleBlowSound: function() {
+        this.initContext();
+        if (!this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          // 1. Simulación de soplido suave (white noise con filtro)
+          const bufferSize = this.ctx.sampleRate * 0.4;
+          const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+          const data = buffer.getChannelData(0);
+          for (let i = 0; i < bufferSize; i++) {
+            data[i] = Math.random() * 2 - 1;
+          }
+
+          const noise = this.ctx.createBufferSource();
+          noise.buffer = buffer;
+
+          const filter = this.ctx.createBiquadFilter();
+          filter.type = 'lowpass';
+          filter.frequency.setValueAtTime(600, now);
+          filter.frequency.exponentialRampToValueAtTime(200, now + 0.35);
+
+          const gain = this.ctx.createGain();
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.38);
+
+          noise.connect(filter);
+          filter.connect(gain);
+          gain.connect(this.ctx.destination);
+          noise.start(now);
+
+          // 2. Acorde de campanas mágicas tras el soplido
+          const chord = [1046.50, 1318.51, 1567.98, 2093.00]; // C6, E6, G6, C7
+          chord.forEach((freq, idx) => {
+            const osc = this.ctx.createOscillator();
+            const g = this.ctx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, now + 0.15 + (idx * 0.06));
+
+            g.gain.setValueAtTime(0, now + 0.15 + (idx * 0.06));
+            g.gain.linearRampToValueAtTime(0.09, now + 0.18 + (idx * 0.06));
+            g.gain.exponentialRampToValueAtTime(0.0001, now + 0.9);
+
+            osc.connect(g);
+            g.connect(this.ctx.destination);
+            osc.start(now + 0.15 + (idx * 0.06));
+            osc.stop(now + 0.95);
+          });
+        } catch (e) {
+          console.warn("Audio Context blow sound:", e);
+        }
+      }
+    };
+
+    /**
+     * MOTOR DE PARTÍCULAS AMBIENTALES Y CONFETI CELEBRATORIO
+     */
+    const AmbientEngine = {
+      container: null,
+
+      init: function() {
+        this.container = document.getElementById('ambient-particles');
+        if (!this.container) return;
+        this.container.innerHTML = '';
+
+        // Estrellas titilantes
+        for (let i = 0; i < 24; i++) {
+          const star = document.createElement('div');
+          star.className = 'ambient-star';
+          const size = 1.5 + Math.random() * 2.5;
+          star.style.width = `${size}px`;
+          star.style.height = `${size}px`;
+          star.style.left = `${Math.random() * 100}%`;
+          star.style.top = `${Math.random() * 100}%`;
+          star.style.animationDelay = `${Math.random() * 3.5}s`;
+          this.container.appendChild(star);
+        }
+
+        // Luciérnagas doradas flotantes
+        for (let i = 0; i < 8; i++) {
+          const fly = document.createElement('div');
+          fly.className = 'ambient-firefly';
+          const size = 3 + Math.random() * 3;
+          fly.style.width = `${size}px`;
+          fly.style.height = `${size}px`;
+          fly.style.left = `${10 + Math.random() * 80}%`;
+          fly.style.top = `${25 + Math.random() * 65}%`;
+          fly.style.animationDelay = `${Math.random() * 5}s`;
+          this.container.appendChild(fly);
+        }
+      },
+
+      // Lluvia de confeti de colores elegantes
+      launchConfettiShower: function(count = 35) {
+        if (!this.container) return;
+        const colors = ['#ffd166', '#f4a261', '#b39ddb', '#f8bbd0', '#ffffff', '#38ef7d'];
+
+        for (let i = 0; i < count; i++) {
+          const confetto = document.createElement('div');
+          confetto.className = 'ambient-confetti-piece';
+          confetto.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+          confetto.style.left = `${Math.random() * 100}%`;
+          confetto.style.top = '-20px';
+          confetto.style.animationDuration = `${2.8 + Math.random() * 3}s`;
+          confetto.style.animationDelay = `${Math.random() * 1.5}s`;
+          this.container.appendChild(confetto);
+
+          // Remover después de que caiga
+          setTimeout(() => {
+            confetto.remove();
+          }, 6000);
+        }
+      }
+    };
+
+    /**
+     * MOTOR BOTÁNICO GENERATIVO (RAMO FLORAL MEJORADO PARA SARA)
      */
     const BotanicalEngine = {
       stemDefinitions: [
-        { id: 'stem-center', d: 'M 200,560 Q 195,380 200,225', width: 4.8, delay: 100 },
-        { id: 'stem-left',   d: 'M 200,550 Q 180,410 88,275',  width: 4.0, delay: 250 },
-        { id: 'stem-right',  d: 'M 200,550 Q 220,415 312,285', width: 4.0, delay: 350 },
-        { id: 'stem-sub-l',  d: 'M 185,420 Q 140,280 125,140', width: 3.0, delay: 500 },
-        { id: 'stem-sub-r',  d: 'M 215,420 Q 260,285 275,145', width: 3.0, delay: 600 }
+        { id: 'stem-center', d: 'M 160,380 Q 158,260 160,150', width: 4.5, delay: 100 },
+        { id: 'stem-left',   d: 'M 160,370 Q 130,280 85,190',  width: 3.8, delay: 250 },
+        { id: 'stem-right',  d: 'M 160,370 Q 190,285 235,195', width: 3.8, delay: 350 },
+        { id: 'stem-sub-l',  d: 'M 145,280 Q 115,180 110,95',  width: 2.8, delay: 500 },
+        { id: 'stem-sub-r',  d: 'M 175,280 Q 205,185 215,100', width: 2.8, delay: 600 }
       ],
 
       leafDefinitions: [
-        { d: 'M 0,0 C 20,-12 36,-6 42,8 C 30,22 12,18 0,0 Z', x: 190, y: 390, rot: -45, isRight: false, delay: 1100 },
-        { d: 'M 0,0 C -20,-12 -36,-6 -42,8 C -30,22 -12,18 0,0 Z', x: 210, y: 370, rot: 40, isRight: true, delay: 1250 },
-        { d: 'M 0,0 C 18,-10 32,-4 38,6 C 26,18 10,14 0,0 Z', x: 140, y: 330, rot: -60, isRight: false, delay: 1400 },
-        { d: 'M 0,0 C -18,-10 -32,-4 -38,6 C -26,18 -10,14 0,0 Z', x: 260, y: 340, rot: 55, isRight: true, delay: 1550 },
-        { d: 'M 0,0 C 14,-8 26,-2 30,5 C 20,14 8,12 0,0 Z', x: 160, y: 220, rot: -30, isRight: false, delay: 1700 },
-        { d: 'M 0,0 C -14,-8 -26,-2 -30,5 C -20,14 -8,12 0,0 Z', x: 240, y: 225, rot: 30, isRight: true, delay: 1800 }
+        { d: 'M 0,0 C 18,-10 32,-4 38,8 C 26,18 10,14 0,0 Z', x: 150, y: 270, rot: -45, isRight: false, delay: 1100 },
+        { d: 'M 0,0 C -18,-10 -32,-4 -38,8 C -26,18 -10,14 0,0 Z', x: 170, y: 250, rot: 40, isRight: true, delay: 1250 },
+        { d: 'M 0,0 C 16,-8 28,-3 34,6 C 24,15 9,12 0,0 Z', x: 115, y: 220, rot: -55, isRight: false, delay: 1400 },
+        { d: 'M 0,0 C -16,-8 -28,-3 -34,6 C -24,15 -9,12 0,0 Z', x: 205, y: 225, rot: 50, isRight: true, delay: 1550 },
+        { d: 'M 0,0 C 12,-6 22,-2 26,5 C 18,12 7,10 0,0 Z', x: 130, y: 140, rot: -30, isRight: false, delay: 1700 },
+        { d: 'M 0,0 C -12,-6 -22,-2 -26,5 C -18,12 -7,10 0,0 Z', x: 190, y: 145, rot: 30, isRight: true, delay: 1800 }
       ],
 
-      initBotanicalDOM: function() {
+      initDOM: function() {
         const stemsGroup = document.getElementById('stems-group');
         const foliageGroup = document.getElementById('foliage-group');
         if (!stemsGroup || !foliageGroup) return;
@@ -1101,14 +1936,18 @@
       },
 
       buildFlowers: function() {
-        this.buildRose('flower-center', 16);
-        this.buildPeony('flower-left', 10);
-        this.buildBlossom('flower-right', 7);
-        this.buildBud('flower-accent-1', 5);
-        this.buildBud('flower-accent-2', 5);
+        // Flor central: Peonía Dorada Radiante
+        this.buildPeony('flower-center', 14, 'petal-golden-peony');
+        // Flor izquierda: Flor Lavanda Luminosa
+        this.buildBlossom('flower-left', 9, 'petal-lavender-blossom');
+        // Flor derecha: Flor Rosa Pastel Luminosa
+        this.buildBlossom('flower-right', 9, 'petal-soft-rose');
+        // Capullos superiores
+        this.buildBud('flower-top-l', 5, 'petal-golden-peony');
+        this.buildBud('flower-top-r', 5, 'petal-lavender-blossom');
       },
 
-      buildRose: function(containerId, count) {
+      buildPeony: function(containerId, count, petalClass) {
         const container = document.getElementById(containerId);
         if (!container) return;
         container.innerHTML = '';
@@ -1117,35 +1956,27 @@
         core.className = 'flower-core';
         container.appendChild(core);
 
+        const total = count || 14;
         const goldenAngle = 137.5;
-        const total = count || 16;
         for (let i = 0; i < total; i++) {
           const petal = document.createElement('div');
-          petal.className = 'petal petal-rose-center';
-          const size = 42 + (i * 3.4);
+          petal.className = `petal ${petalClass}`;
+          const size = 32 + (i * 2.8);
           const rot = (i * goldenAngle) % 360;
-          const tilt = 14 + Math.min(i * 2.8, 56);
-          const spread = i * 1.0;
+          const tilt = 15 + Math.min(i * 2.8, 50);
 
           petal.style.width = `${size}px`;
-          petal.style.height = `${size * 1.18}px`;
+          petal.style.height = `${size * 1.15}px`;
           petal.style.setProperty('--rot', `${rot}deg`);
           petal.style.setProperty('--rx', `${tilt}deg`);
-          petal.style.setProperty('--ty', `-${spread}px`);
-          petal.style.transitionDelay = `${1100 + (i * 45)}ms`;
+          petal.style.transitionDelay = `${1000 + (i * 45)}ms`;
           petal.style.zIndex = 25 - i;
-
-          if (i === 4 || i === 8 || i === 12) {
-            const dew = document.createElement('span');
-            dew.className = 'dewdrop';
-            petal.appendChild(dew);
-          }
 
           container.appendChild(petal);
         }
       },
 
-      buildPeony: function(containerId, count) {
+      buildBlossom: function(containerId, count, petalClass) {
         const container = document.getElementById(containerId);
         if (!container) return;
         container.innerHTML = '';
@@ -1154,96 +1985,47 @@
         core.className = 'flower-core';
         container.appendChild(core);
 
-        const total = count || 10;
+        const total = count || 8;
         for (let i = 0; i < total; i++) {
           const petal = document.createElement('div');
-          petal.className = 'petal petal-peony';
-          const size = 36 + (i * 3.0);
-          const rot = (i * 144) % 360;
-          const tilt = 20 + Math.min(i * 3.0, 52);
+          petal.className = `petal ${petalClass}`;
+          const size = 28 + (i * 2.4);
+          const rot = (i * (360 / total));
 
           petal.style.width = `${size}px`;
-          petal.style.height = `${size * 1.08}px`;
-          petal.style.borderRadius = '50% 50% 45% 45%';
+          petal.style.height = `${size * 1.15}px`;
           petal.style.setProperty('--rot', `${rot}deg`);
-          petal.style.setProperty('--rx', `${tilt}deg`);
-          petal.style.transitionDelay = `${1250 + (i * 50)}ms`;
+          petal.style.setProperty('--rx', '32deg');
+          petal.style.transitionDelay = `${1150 + (i * 50)}ms`;
           petal.style.zIndex = 20 - i;
 
           container.appendChild(petal);
         }
       },
 
-      buildBlossom: function(containerId, count) {
-        const container = document.getElementById(containerId);
-        if (!container) return;
-        container.innerHTML = '';
-
-        const core = document.createElement('div');
-        core.className = 'flower-core';
-        container.appendChild(core);
-
-        const total = count || 7;
-        for (let i = 0; i < total; i++) {
-          const petal = document.createElement('div');
-          petal.className = 'petal petal-blossom';
-          const size = 34 + (i * 2.8);
-          const rot = (i * (360 / total));
-
-          petal.style.width = `${size}px`;
-          petal.style.height = `${size * 1.15}px`;
-          petal.style.borderRadius = '55% 45% 25% 25%';
-          petal.style.setProperty('--rot', `${rot}deg`);
-          petal.style.setProperty('--rx', '35deg');
-          petal.style.transitionDelay = `${1400 + (i * 55)}ms`;
-          petal.style.zIndex = 15 - i;
-
-          container.appendChild(petal);
-        }
-      },
-
-      buildBud: function(containerId, count) {
+      buildBud: function(containerId, count, petalClass) {
         const container = document.getElementById(containerId);
         if (!container) return;
         container.innerHTML = '';
 
         for (let i = 0; i < count; i++) {
           const petal = document.createElement('div');
-          petal.className = 'petal petal-rose-center';
-          const size = 20 + (i * 2.2);
-          const rot = (i * 60);
+          petal.className = `petal ${petalClass}`;
+          const size = 18 + (i * 2.0);
+          const rot = (i * 72);
 
           petal.style.width = `${size}px`;
-          petal.style.height = `${size * 1.3}px`;
+          petal.style.height = `${size * 1.25}px`;
           petal.style.setProperty('--rot', `${rot}deg`);
           petal.style.setProperty('--rx', '20deg');
-          petal.style.transitionDelay = `${1800 + (i * 60)}ms`;
+          petal.style.transitionDelay = `${1400 + (i * 60)}ms`;
 
           container.appendChild(petal);
         }
       },
 
-      startBloomSequence: function(onComplete) {
-        const envelopeBox = document.getElementById('envelope-3d');
-        const envelopeScene = document.getElementById('envelope-scene');
-        const bloomScene = document.getElementById('bloom-scene');
+      startBloom: function() {
         const stage = document.getElementById('bouquet-stage');
-        const godRays = document.getElementById('god-rays');
-        const magicHalo = document.getElementById('magic-glow-halo');
-
-        if (envelopeBox) envelopeBox.classList.add('is-opened');
-        if (typeof AmbientEngine !== 'undefined') {
-          AmbientEngine.burstMagicSparks(50, 48);
-        }
-
-        if (godRays) godRays.classList.add('is-active');
-        if (magicHalo) magicHalo.classList.add('is-active');
-
-        setTimeout(() => {
-          if (envelopeScene) envelopeScene.classList.add('is-hidden');
-          if (bloomScene) bloomScene.classList.add('is-active');
-        }, 650);
-
         const stems = document.querySelectorAll('.stem-path');
         const leaves = document.querySelectorAll('.botanical-leaf');
         const flowers = document.querySelectorAll('.flower-head');
@@ -1252,433 +2034,369 @@
           const def = this.stemDefinitions[idx] || { delay: 100 };
           setTimeout(() => {
             stem.classList.add('grown');
-          }, def.delay + 600);
+          }, def.delay + 100);
         });
 
         leaves.forEach((leaf, idx) => {
-          const def = this.leafDefinitions[idx] || { delay: 1200 };
+          const def = this.leafDefinitions[idx] || { delay: 1100 };
           setTimeout(() => {
             leaf.classList.add('sprouted');
-          }, def.delay + 600);
+          }, def.delay + 150);
         });
 
         flowers.forEach((flower, idx) => {
           setTimeout(() => {
             flower.classList.add('bloomed');
-          }, 1600 + (idx * 220));
+          }, 1200 + (idx * 200));
         });
 
         setTimeout(() => {
           if (stage) stage.classList.add('in-breeze');
-          if (typeof onComplete === 'function') onComplete();
-        }, 4200);
-
-        return "🌸 ¡Florecimiento activado con éxito! Mira cómo florece en pantalla.";
+        }, 3600);
       },
 
       resetBloom: function() {
         const stage = document.getElementById('bouquet-stage');
-        const envelopeBox = document.getElementById('envelope-3d');
-        const envelopeScene = document.getElementById('envelope-scene');
-        const bloomScene = document.getElementById('bloom-scene');
-        const godRays = document.getElementById('god-rays');
-        const magicHalo = document.getElementById('magic-glow-halo');
-
-        if (godRays) godRays.classList.remove('is-active');
-        if (magicHalo) magicHalo.classList.remove('is-active');
         if (stage) stage.classList.remove('in-breeze');
-        if (bloomScene) {
-          bloomScene.classList.remove('is-active');
-          bloomScene.classList.remove('has-message');
-        }
-        if (envelopeScene) envelopeScene.classList.remove('is-hidden');
-        if (envelopeBox) envelopeBox.classList.remove('is-opened');
 
         document.querySelectorAll('.stem-path').forEach(el => el.classList.remove('grown'));
         document.querySelectorAll('.botanical-leaf').forEach(el => el.classList.remove('sprouted'));
         document.querySelectorAll('.flower-head').forEach(el => el.classList.remove('bloomed'));
-
-        return "↺ Experiencia reiniciada al sobre inicial.";
       }
     };
 
     /**
-     * SINTETIZADOR DE MÚSICA ROMÁNTICA Y REPRODUCTOR PERSONALIZADO
+     * CONTROLADOR DE NAVEGACIÓN Y EXPERIENCIA DE LAS 5 ESCENAS
      */
-    const RomanticAudio = {
-      ctx: null,
-      audioEl: null,
-      isPlaying: false,
-      melodyTimer: null,
-
-      init: function() {
-        if (!this.ctx) {
-          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-          if (AudioContextClass) {
-            this.ctx = new AudioContextClass();
-          }
-        }
-      },
-
-      playNote: function(freq, startTime, duration = 1.4) {
-        if (!this.ctx) return;
-        try {
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(freq, startTime);
-
-          gain.gain.setValueAtTime(0, startTime);
-          gain.gain.linearRampToValueAtTime(0.14, startTime + 0.04);
-          gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
-
-          osc.connect(gain);
-          gain.connect(this.ctx.destination);
-
-          osc.start(startTime);
-          osc.stop(startTime + duration);
-        } catch (e) {
-          console.warn("Audio nativo no disponible:", e);
-        }
-      },
-
-      playMelody: function() {
-        this.init();
-        if (!this.ctx) return;
-
-        if (this.ctx.state === 'suspended') {
-          this.ctx.resume();
-        }
-        this.isPlaying = true;
-
-        if (this.melodyTimer) {
-          clearTimeout(this.melodyTimer);
-          this.melodyTimer = null;
-        }
-
-        const notes = [
-          523.25, 659.25, 783.99, 880.00, 1046.50, 880.00, 783.99, 659.25,
-          587.33, 659.25, 783.99, 1046.50, 1174.66, 1046.50, 880.00, 783.99
-        ];
-        let step = 0;
-
-        const loop = () => {
-          if (!this.isPlaying) return;
-          const now = this.ctx.currentTime;
-          const freq = notes[step % notes.length];
-          this.playNote(freq, now, 1.6);
-
-          if (step % 4 === 0) {
-            this.playNote(freq * 0.5, now + 0.02, 2.0);
-          }
-
-          step++;
-          this.melodyTimer = setTimeout(loop, 460);
-        };
-        loop();
-      },
-
-      play: function() {
-        // Detener de inmediato cualquier reproducción previa para evitar superposición
-        this.stop();
-
-        const icon = document.getElementById('audio-icon');
-        const audioSrc = (typeof GIFT_CONFIG !== 'undefined' && GIFT_CONFIG.customAudioUrl) ? GIFT_CONFIG.customAudioUrl.trim() : "";
-        if (audioSrc !== "") {
-          if (!this.audioEl) {
-            this.audioEl = new Audio();
-            this.audioEl.loop = true;
-            // Garantizar repetición en bucle infinito automática cuando termine la canción
-            this.audioEl.addEventListener('ended', () => {
-              this.audioEl.currentTime = 0;
-              this.audioEl.play().catch(e => console.warn(e));
-            });
-          }
-          if (!this.audioEl.src.endsWith(audioSrc)) {
-            this.audioEl.src = audioSrc;
-            this.audioEl.load();
-          }
-          this.audioEl.currentTime = 0;
-          this.audioEl.play().then(() => {
-            this.isPlaying = true;
-            if (icon) icon.textContent = '🔊';
-          }).catch(err => {
-            console.warn("No se pudo reproducir el archivo de audio, usando cajita de música nativa:", err);
-            this.playMelody();
-            if (icon) icon.textContent = '🔊';
-          });
-          this.isPlaying = true;
-          if (icon) icon.textContent = '🔊';
-        } else {
-          this.playMelody();
-          if (icon) icon.textContent = '🔊';
-        }
-      },
-
-      pause: function() {
-        const icon = document.getElementById('audio-icon');
-        if (this.audioEl) {
-          this.audioEl.pause();
-        }
-        this.isPlaying = false;
-        if (this.melodyTimer) {
-          clearTimeout(this.melodyTimer);
-          this.melodyTimer = null;
-        }
-        if (this.ctx && this.ctx.state === 'running') {
-          this.ctx.suspend();
-        }
-        if (icon) icon.textContent = '🔇';
-      },
-
-      resume: function() {
-        const icon = document.getElementById('audio-icon');
-        if (this.audioEl && this.audioEl.src) {
-          this.audioEl.play().then(() => {
-            this.isPlaying = true;
-            if (icon) icon.textContent = '🔊';
-          }).catch(() => {
-            this.play();
-          });
-        } else {
-          this.play();
-        }
-      },
-
-      stop: function() {
-        this.pause();
-        if (this.audioEl) {
-          this.audioEl.currentTime = 0;
-        }
-      },
-
-      toggle: function() {
-        if (this.isPlaying) {
-          this.pause();
-        } else {
-          this.resume();
-        }
-      }
-    };
-
-    /**
-     * MOTOR AMBIENTAL Y PARTÍCULAS NOCTURNAS CINEMATOGRÁFICAS (TIKTOK AESTHETIC)
-     */
-    const AmbientEngine = {
-      container: null,
-
-      init: function() {
-        this.container = document.getElementById('ambient-particles');
-        if (!this.container) return;
-        this.container.innerHTML = '';
-        this.spawnAmbientElements();
-      },
-
-      spawnAmbientElements: function() {
-        if (!this.container) return;
-
-        // 1. Cielo de 18 estrellas titilantes optimizadas (hilo GPU puro)
-        for (let i = 0; i < 18; i++) {
-          const star = document.createElement('div');
-          star.className = 'twinkling-star';
-          const size = 1.6 + Math.random() * 2.2;
-          star.style.width = `${size}px`;
-          star.style.height = `${size}px`;
-          star.style.left = `${Math.random() * 98}%`;
-          star.style.top = `${Math.random() * 95}%`;
-          star.style.animationDelay = `${Math.random() * 3.5}s`;
-          star.style.animationDuration = `${2.8 + Math.random() * 2.5}s`;
-          this.container.appendChild(star);
-        }
-
-        // 2. Luciérnagas doradas sutiles aceleradas por hardware
-        for (let i = 0; i < 6; i++) {
-          const fly = document.createElement('div');
-          fly.className = 'firefly';
-          const size = 3 + Math.random() * 4;
-          fly.style.width = `${size}px`;
-          fly.style.height = `${size}px`;
-          fly.style.left = `${10 + Math.random() * 80}%`;
-          fly.style.top = `${30 + Math.random() * 60}%`;
-          fly.style.animationDelay = `${Math.random() * 5}s`;
-          fly.style.animationDuration = `${5 + Math.random() * 3}s`;
-          this.container.appendChild(fly);
-        }
-
-        // 3. Pétalos flotantes cayendo suavemente
-        for (let i = 0; i < 5; i++) {
-          const petal = document.createElement('div');
-          petal.className = 'falling-petal-bg';
-          const scale = 0.5 + Math.random() * 0.5;
-          petal.style.transform = `scale(${scale})`;
-          petal.style.left = `${Math.random() * 92}%`;
-          petal.style.animationDelay = `${Math.random() * 7}s`;
-          petal.style.animationDuration = `${7 + Math.random() * 4}s`;
-          this.container.appendChild(petal);
-        }
-      },
-
-      burstMagicSparks: function(originX, originY) {
-        if (!this.container) return;
-        const count = 14;
-        for (let i = 0; i < count; i++) {
-          const spark = document.createElement('div');
-          spark.className = 'magic-burst-spark';
-          spark.style.left = `${originX || 50}%`;
-          spark.style.top = `${originY || 45}%`;
-          this.container.appendChild(spark);
-
-          const angle = (i / count) * 360 * (Math.PI / 180);
-          const distance = 50 + Math.random() * 100;
-          const destX = Math.cos(angle) * distance;
-          const destY = Math.sin(angle) * distance;
-
-          requestAnimationFrame(() => {
-            spark.style.transform = `translate(calc(-50% + ${destX}px), calc(-50% + ${destY}px)) scale(${1 + Math.random() * 1.5})`;
-            spark.style.opacity = '1';
-
-            setTimeout(() => {
-              spark.style.opacity = '0';
-              setTimeout(() => spark.remove(), 700);
-            }, 600);
-          });
-        }
-      }
-    };
-
-    /**
-     * CONTROLADOR DE INTERACCIONES Y TRANSICIÓN DE ESCENAS
-     */
-    const GiftExperience = {
+    const ExperienceController = {
+      currentScene: 1,
+      hasMadeWish: false,
       isBusy: false,
 
-      applyConfig: function() {
-        if (typeof GIFT_CONFIG === 'undefined') return;
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const paramRecipient = urlParams.get('para') || urlParams.get('to');
-        const paramSender = urlParams.get('de') || urlParams.get('from');
-        const paramMessage = urlParams.get('msg') || urlParams.get('mensaje');
-        const paramAudio = urlParams.get('audio') || urlParams.get('music');
-        if (paramAudio) {
-          GIFT_CONFIG.customAudioUrl = decodeURIComponent(paramAudio);
-        }
-
-        const recipientText = paramRecipient ? `Para ${paramRecipient}` : GIFT_CONFIG.recipientName;
-        const senderText = paramSender ? `Con todo mi cariño, ${paramSender}` : GIFT_CONFIG.senderName;
-        const messageText = paramMessage ? decodeURIComponent(paramMessage) : GIFT_CONFIG.mainMessage;
-
-        if (paramRecipient) {
-          document.title = `Un Regalo Especial Para ${paramRecipient} ✨`;
-        }
-
-        const elTeaser = document.getElementById('ui-teaser-text');
-        const elButtonText = document.querySelector('.btn-discover .btn-text');
-        const elRecipient = document.getElementById('ui-recipient');
-        const elMessage = document.getElementById('ui-main-message');
-        const elSender = document.getElementById('ui-sender');
-
-        if (elTeaser && GIFT_CONFIG.teaserText) elTeaser.textContent = GIFT_CONFIG.teaserText;
-        if (elButtonText && GIFT_CONFIG.buttonText) elButtonText.textContent = GIFT_CONFIG.buttonText;
-        if (elRecipient) elRecipient.textContent = recipientText;
-        if (elMessage) elMessage.textContent = messageText;
-        if (elSender) elSender.textContent = senderText;
-      },
-
       init: function() {
-        this.applyConfig();
-        BotanicalEngine.initBotanicalDOM();
+        this.applyCentralConfig();
         AmbientEngine.init();
-
-        const btnDiscover = document.getElementById('btn-discover');
-        const envelopeBox = document.getElementById('envelope-3d');
-        const btnReplay = document.getElementById('btn-replay');
-        const btnAudio = document.getElementById('btn-audio');
-
-        if (btnDiscover) {
-          btnDiscover.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.startExperience();
-          });
-        }
-
-        if (envelopeBox) {
-          envelopeBox.addEventListener('click', () => {
-            this.startExperience();
-          });
-        }
-
-        if (btnReplay) {
-          btnReplay.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.restartExperience();
-          });
-        }
-
-        if (btnAudio) {
-          btnAudio.addEventListener('click', (e) => {
-            e.stopPropagation();
-            RomanticAudio.toggle();
-          });
-        }
+        BotanicalEngine.initDOM();
+        this.bindEvents();
       },
 
-      startExperience: function() {
-        if (this.isBusy) return;
-        this.isBusy = true;
+      applyCentralConfig: function() {
+        // Títulos de Escena 1
+        const elTeaserTitle = document.getElementById('ui-teaser-title');
+        const elTeaserDesc = document.getElementById('ui-teaser-desc');
+        if (elTeaserTitle && BIRTHDAY_CONFIG.scene1.teaserTitle) elTeaserTitle.textContent = BIRTHDAY_CONFIG.scene1.teaserTitle;
+        if (elTeaserDesc && BIRTHDAY_CONFIG.scene1.teaserDesc) elTeaserDesc.textContent = BIRTHDAY_CONFIG.scene1.teaserDesc;
 
-        // Iniciar música automáticamente con el toque/clic de apertura
-        RomanticAudio.play();
+        // Escena 2
+        const elCakeTitle = document.getElementById('ui-cake-title');
+        const elCakeSub = document.getElementById('ui-cake-sub');
+        const elWishRev = document.getElementById('ui-wish-revealed');
+        if (elCakeTitle && BIRTHDAY_CONFIG.scene2.title) elCakeTitle.textContent = BIRTHDAY_CONFIG.scene2.title;
+        if (elCakeSub && BIRTHDAY_CONFIG.scene2.subtitle) elCakeSub.textContent = BIRTHDAY_CONFIG.scene2.subtitle;
+        if (elWishRev && BIRTHDAY_CONFIG.scene2.wishRevealed) elWishRev.textContent = BIRTHDAY_CONFIG.scene2.wishRevealed;
 
-        BotanicalEngine.startBloomSequence(() => {
-          this.revealMessageScene();
+        // Escena 3
+        const elBloomQuote = document.getElementById('ui-bloom-quote');
+        const elBloomSub = document.getElementById('ui-bloom-sub');
+        if (elBloomQuote && BIRTHDAY_CONFIG.scene3.quote) elBloomQuote.textContent = BIRTHDAY_CONFIG.scene3.quote;
+        if (elBloomSub && BIRTHDAY_CONFIG.scene3.subtext) elBloomSub.textContent = BIRTHDAY_CONFIG.scene3.subtext;
+
+        // Escena 4: Polaroids y Carta
+        if (BIRTHDAY_CONFIG.scene4.photos && Array.isArray(BIRTHDAY_CONFIG.scene4.photos)) {
+          BIRTHDAY_CONFIG.scene4.photos.forEach((photo, idx) => {
+            const captionEl = document.getElementById(`photo-caption-${idx}`);
+            const boxEl = document.getElementById(`photo-box-${idx}`);
+            if (captionEl && photo.caption) captionEl.textContent = photo.caption;
+
+            if (boxEl && photo.url && photo.url.trim() !== "") {
+              boxEl.innerHTML = `<img src="${photo.url.trim()}" alt="${photo.caption || 'Foto de Sara'}" class="polaroid-img">`;
+            }
+          });
+        }
+
+        const letterTitleEl = document.getElementById('ui-letter-title');
+        const letterBodyEl = document.getElementById('ui-letter-body');
+        if (letterTitleEl && BIRTHDAY_CONFIG.scene4.letterTitle) letterTitleEl.textContent = BIRTHDAY_CONFIG.scene4.letterTitle;
+        if (letterBodyEl && BIRTHDAY_CONFIG.scene4.letterParagraphs) {
+          letterBodyEl.innerHTML = BIRTHDAY_CONFIG.scene4.letterParagraphs.map(p => `<p>${p}</p>`).join('');
+        }
+
+        // Escena 5
+        const elFinaleTitle = document.getElementById('ui-finale-title');
+        const elFinaleSub = document.getElementById('ui-finale-sub');
+        const elFinaleFarewell = document.getElementById('ui-finale-farewell');
+        const elFinaleSign = document.getElementById('ui-finale-signature');
+
+        if (elFinaleTitle && BIRTHDAY_CONFIG.scene5.titlePrefix) {
+          elFinaleTitle.innerHTML = `${BIRTHDAY_CONFIG.scene5.titlePrefix} <span>${BIRTHDAY_CONFIG.scene5.titleHighlight}</span>`;
+        }
+        if (elFinaleSub && BIRTHDAY_CONFIG.scene5.subtitle) elFinaleSub.textContent = BIRTHDAY_CONFIG.scene5.subtitle;
+        if (elFinaleFarewell && BIRTHDAY_CONFIG.scene5.farewell) elFinaleFarewell.textContent = BIRTHDAY_CONFIG.scene5.farewell;
+        if (elFinaleSign && BIRTHDAY_CONFIG.scene5.signature) elFinaleSign.textContent = BIRTHDAY_CONFIG.scene5.signature;
+      },
+
+      updateChapterDots: function(step) {
+        const dots = document.querySelectorAll('.chapter-dot');
+        dots.forEach((dot, idx) => {
+          const chapterNum = idx + 1;
+          dot.classList.remove('active', 'completed');
+          if (chapterNum === step) {
+            dot.classList.add('active');
+          } else if (chapterNum < step) {
+            dot.classList.add('completed');
+          }
         });
       },
 
-      revealMessageScene: function() {
-        const bloomScene = document.getElementById('bloom-scene');
-        const messageScene = document.getElementById('message-scene');
-        const controlsBar = document.getElementById('controls-bar');
+      goToScene: function(targetScene) {
+        if (this.isBusy || targetScene === this.currentScene) return;
+        this.isBusy = true;
 
-        if (bloomScene) {
-          bloomScene.classList.add('has-message');
+        const currentEl = document.getElementById(`scene-${this.currentScene}`);
+        const nextEl = document.getElementById(`scene-${targetScene}`);
+
+        if (currentEl) {
+          currentEl.classList.remove('is-active');
+          currentEl.setAttribute('aria-hidden', 'true');
         }
 
         setTimeout(() => {
-          if (messageScene) messageScene.classList.add('is-visible');
-        }, 350);
+          if (nextEl) {
+            nextEl.classList.add('is-active');
+            nextEl.setAttribute('aria-hidden', 'false');
+          }
 
-        setTimeout(() => {
-          if (controlsBar) controlsBar.classList.add('is-visible');
+          this.currentScene = targetScene;
+          this.updateChapterDots(targetScene);
           this.isBusy = false;
-        }, 1100);
+
+          // Disparadores específicos por escena
+          if (targetScene === 2) {
+            AmbientEngine.launchConfettiShower(20);
+          } else if (targetScene === 3) {
+            BotanicalEngine.startBloom();
+          } else if (targetScene === 5) {
+            AmbientEngine.launchConfettiShower(45);
+          }
+        }, 400);
       },
 
-      restartExperience: function() {
+      bindEvents: function() {
+        // Control de audio
+        const btnAudio = document.getElementById('btn-audio-toggle');
+        if (btnAudio) {
+          btnAudio.addEventListener('click', (e) => {
+            e.stopPropagation();
+            AudioEngine.toggleMusic();
+          });
+        }
+
+        // Escena 1: Abrir sobre
+        const btnOpen = document.getElementById('btn-open-envelope');
+        const envelope = document.getElementById('envelope-3d');
+
+        const triggerOpenEnvelope = () => {
+          if (this.isBusy) return;
+          AudioEngine.playMusic();
+          AudioEngine.playChimeSound();
+          envelope.classList.add('is-opened');
+
+          setTimeout(() => {
+            this.goToScene(2);
+          }, 1100);
+        };
+
+        if (btnOpen) btnOpen.addEventListener('click', triggerOpenEnvelope);
+        if (envelope) envelope.addEventListener('click', triggerOpenEnvelope);
+
+        // Escena 2: Pedir un deseo
+        const btnWish = document.getElementById('btn-make-wish');
+        const btnNextScene3 = document.getElementById('btn-goto-scene-3');
+        const wishCard = document.getElementById('wish-result-card');
+
+        if (btnWish) {
+          btnWish.addEventListener('click', () => {
+            if (this.hasMadeWish) return;
+            this.hasMadeWish = true;
+
+            // Apagar velas y reproducir efectos
+            AudioEngine.playCandleBlowSound();
+            document.querySelectorAll('.candle').forEach((c, idx) => {
+              setTimeout(() => {
+                c.classList.add('blown-out');
+              }, idx * 140);
+            });
+
+            // Lluvia de confeti
+            AmbientEngine.launchConfettiShower(35);
+
+            // Revelar mensaje del deseo
+            setTimeout(() => {
+              if (wishCard) wishCard.classList.add('is-visible');
+              btnWish.style.display = 'none';
+              if (btnNextScene3) btnNextScene3.style.display = 'inline-flex';
+            }, 600);
+          });
+        }
+
+        if (btnNextScene3) {
+          btnNextScene3.addEventListener('click', () => {
+            AudioEngine.playChimeSound();
+            this.goToScene(3);
+          });
+        }
+
+        // Escena 3: Ir a Escena 4
+        const btnNextScene4 = document.getElementById('btn-goto-scene-4');
+        if (btnNextScene4) {
+          btnNextScene4.addEventListener('click', () => {
+            AudioEngine.playChimeSound();
+            this.goToScene(4);
+          });
+        }
+
+        // Escena 4: Pestañas entre Polaroids y Carta
+        const tabPolaroids = document.getElementById('tab-polaroids');
+        const tabLetter = document.getElementById('tab-letter');
+        const viewPolaroids = document.getElementById('view-polaroids');
+        const viewLetter = document.getElementById('view-letter');
+
+        if (tabPolaroids && tabLetter) {
+          tabPolaroids.addEventListener('click', () => {
+            tabPolaroids.classList.add('active');
+            tabLetter.classList.remove('active');
+            tabPolaroids.setAttribute('aria-selected', 'true');
+            tabLetter.setAttribute('aria-selected', 'false');
+            viewPolaroids.style.display = 'flex';
+            viewLetter.style.display = 'none';
+            AudioEngine.playChimeSound();
+          });
+
+          tabLetter.addEventListener('click', () => {
+            tabLetter.classList.add('active');
+            tabPolaroids.classList.remove('active');
+            tabLetter.setAttribute('aria-selected', 'true');
+            tabPolaroids.setAttribute('aria-selected', 'false');
+            viewLetter.style.display = 'block';
+            viewPolaroids.style.display = 'none';
+            AudioEngine.playChimeSound();
+          });
+        }
+
+        // Escena 4: Lightbox para ampliar Polaroids
+        const polaroidCards = document.querySelectorAll('.polaroid-card');
+        const lightbox = document.getElementById('lightbox-modal');
+        const lightboxImgBox = document.getElementById('lightbox-img-box');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const btnCloseLightbox = document.getElementById('btn-lightbox-close');
+
+        polaroidCards.forEach(card => {
+          card.addEventListener('click', () => {
+            const idx = parseInt(card.getAttribute('data-photo-index') || '0', 10);
+            const photoData = (BIRTHDAY_CONFIG.scene4.photos && BIRTHDAY_CONFIG.scene4.photos[idx]) 
+              ? BIRTHDAY_CONFIG.scene4.photos[idx] 
+              : { caption: "Recuerdo especial", icon: "✨" };
+
+            if (photoData.url && photoData.url.trim() !== "") {
+              lightboxImgBox.innerHTML = `<img src="${photoData.url}" alt="${photoData.caption}" style="width:100%;height:100%;object-fit:cover;">`;
+            } else {
+              lightboxImgBox.innerHTML = `
+                <div class="polaroid-placeholder-art">
+                  <span class="placeholder-icon">${photoData.icon || '🎂'}</span>
+                  <span class="placeholder-hint">Recuerdo para Sara</span>
+                </div>
+              `;
+            }
+
+            lightboxCaption.textContent = photoData.caption || "Recuerdo especial";
+            lightbox.classList.add('is-active');
+            AudioEngine.playChimeSound();
+          });
+        });
+
+        if (btnCloseLightbox && lightbox) {
+          btnCloseLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('is-active');
+          });
+          lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+              lightbox.classList.remove('is-active');
+            }
+          });
+        }
+
+        // Escena 4: Ir a Escena 5
+        const btnNextScene5 = document.getElementById('btn-goto-scene-5');
+        if (btnNextScene5) {
+          btnNextScene5.addEventListener('click', () => {
+            AudioEngine.playChimeSound();
+            this.goToScene(5);
+          });
+        }
+
+        // Escena 5: Reiniciar toda la experiencia
+        const btnReplay = document.getElementById('btn-replay-all');
+        if (btnReplay) {
+          btnReplay.addEventListener('click', () => {
+            this.restartEntireExperience();
+          });
+        }
+      },
+
+      restartEntireExperience: function() {
         if (this.isBusy) return;
         this.isBusy = true;
 
-        const messageScene = document.getElementById('message-scene');
-        const controlsBar = document.getElementById('controls-bar');
-        const bloomScene = document.getElementById('bloom-scene');
+        // 1. Cortar y reiniciar música
+        AudioEngine.stopAndResetMusic();
 
-        if (messageScene) messageScene.classList.remove('is-visible');
-        if (controlsBar) controlsBar.classList.remove('is-visible');
+        // 2. Reiniciar velas de la torta
+        this.hasMadeWish = false;
+        document.querySelectorAll('.candle').forEach(c => c.classList.remove('blown-out'));
+        const btnWish = document.getElementById('btn-make-wish');
+        const btnNextScene3 = document.getElementById('btn-goto-scene-3');
+        const wishCard = document.getElementById('wish-result-card');
+        if (btnWish) btnWish.style.display = 'inline-flex';
+        if (btnNextScene3) btnNextScene3.style.display = 'none';
+        if (wishCard) wishCard.classList.remove('is-visible');
 
-        // Cortar la música por completo al reiniciar para que no se superpongan audios
-        RomanticAudio.stop();
+        // 3. Reiniciar flores
+        BotanicalEngine.resetBloom();
+
+        // 4. Reiniciar sobre 3D
+        const envelope = document.getElementById('envelope-3d');
+        if (envelope) envelope.classList.remove('is-opened');
+
+        // 5. Regresar pestañas de la escena 4 a Polaroids
+        const tabPolaroids = document.getElementById('tab-polaroids');
+        const tabLetter = document.getElementById('tab-letter');
+        const viewPolaroids = document.getElementById('view-polaroids');
+        const viewLetter = document.getElementById('view-letter');
+        if (tabPolaroids && tabLetter) {
+          tabPolaroids.classList.add('active');
+          tabLetter.classList.remove('active');
+          viewPolaroids.style.display = 'flex';
+          viewLetter.style.display = 'none';
+        }
+
+        // 6. Volver a la Escena 1
+        const currentEl = document.getElementById(`scene-${this.currentScene}`);
+        const scene1El = document.getElementById('scene-1');
+
+        if (currentEl) currentEl.classList.remove('is-active');
 
         setTimeout(() => {
-          if (bloomScene) bloomScene.classList.remove('has-message');
-          BotanicalEngine.resetBloom();
+          if (scene1El) scene1El.classList.add('is-active');
+          this.currentScene = 1;
+          this.updateChapterDots(1);
           this.isBusy = false;
         }, 500);
       }
     };
 
+    // Inicialización al cargar el DOM
     document.addEventListener('DOMContentLoaded', () => {
-      GiftExperience.init();
+      ExperienceController.init();
     });
   </script>
 </body>
