@@ -1152,13 +1152,13 @@
     }
 
     .polaroid-card {
-      width: 250px;
+      width: min(270px, 88vw);
       background: #ffffff;
-      padding: 12px 12px 20px;
-      border-radius: 4px;
+      padding: 12px 12px 18px;
+      border-radius: 6px;
       box-shadow: 
-        0 10px 25px rgba(0, 0, 0, 0.4),
-        0 2px 6px rgba(0, 0, 0, 0.2);
+        0 12px 28px rgba(0, 0, 0, 0.42),
+        0 2px 8px rgba(0, 0, 0, 0.22);
       cursor: pointer;
       transition: all 0.35s var(--ease-bounce);
       position: relative;
@@ -1168,12 +1168,14 @@
     .polaroid-card:nth-child(2) { transform: rotate(2deg); }
     .polaroid-card:nth-child(3) { transform: rotate(-1.5deg); }
 
-    .polaroid-card:hover {
-      transform: scale(1.05) rotate(0deg) !important;
+    .polaroid-card:hover,
+    .polaroid-card:focus-visible {
+      transform: scale(1.04) rotate(0deg) !important;
       box-shadow: 
-        0 18px 35px rgba(0, 0, 0, 0.6),
-        0 0 25px rgba(255, 209, 102, 0.4);
+        0 20px 40px rgba(0, 0, 0, 0.65),
+        0 0 25px rgba(255, 209, 102, 0.45);
       z-index: 10;
+      outline: none;
     }
 
     /* Cinta adhesiva en la parte superior del polaroid */
@@ -1184,18 +1186,19 @@
       transform: translateX(-50%);
       width: 75px;
       height: 20px;
-      background: rgba(255, 248, 220, 0.65);
+      background: rgba(255, 248, 220, 0.7);
       backdrop-filter: blur(2px);
       box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-      border-left: 2px dashed rgba(0,0,0,0.1);
-      border-right: 2px dashed rgba(0,0,0,0.1);
+      border-left: 2px dashed rgba(0,0,0,0.12);
+      border-right: 2px dashed rgba(0,0,0,0.12);
+      z-index: 5;
     }
 
     .polaroid-photo-frame {
       width: 100%;
-      height: 180px;
-      background: #17072a;
-      border-radius: 2px;
+      height: 240px;
+      background: #110520;
+      border-radius: 3px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -1204,11 +1207,38 @@
       position: relative;
     }
 
+    .polaroid-img-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      background: #0f041a;
+    }
+
     .polaroid-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .polaroid-card:hover .polaroid-img,
+    .polaroid-card:focus-visible .polaroid-img {
+      transform: scale(1.05);
+    }
+
+    /* Encuadre óptimo y estético por fotografía */
+    .polaroid-img-1 {
+      object-position: center 25%;
+    }
+
+    .polaroid-img-2 {
+      object-position: center center;
+    }
+
+    .polaroid-img-3 {
+      object-position: center 35%;
     }
 
     /* Marcador elegante cuando no hay foto subida */
@@ -1245,6 +1275,18 @@
       font-size: 1.35rem;
       font-weight: 700;
       line-height: 1.2;
+    }
+
+    .polaroid-zoom-hint {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.68rem;
+      color: #8b729e;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 3px;
+      opacity: 0.85;
+      text-align: center;
     }
 
     /* Sección B: Carta Especial */
@@ -1423,13 +1465,13 @@
 
     .lightbox-content {
       background: #ffffff;
-      padding: 15px 15px 25px;
+      padding: 15px 15px 22px;
       border-radius: 8px;
-      max-width: 360px;
+      max-width: min(390px, 92vw);
       width: 100%;
       text-align: center;
       position: relative;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.85);
       transform: scale(0.9);
       transition: transform 0.4s var(--ease-bounce);
     }
@@ -1442,22 +1484,32 @@
       position: absolute;
       top: -16px;
       right: -16px;
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       background: #ffd166;
       color: #2b1838;
-      border: none;
+      border: 2px solid #ffffff;
       border-radius: 50%;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: bold;
       cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      background: #f4a261;
+      transform: scale(1.1);
     }
 
     .lightbox-img-box {
       width: 100%;
-      height: 280px;
-      background: #17072a;
+      height: 380px;
+      max-height: 62vh;
+      background: #0d041a;
       border-radius: 4px;
       overflow: hidden;
       display: flex;
@@ -1465,11 +1517,18 @@
       justify-content: center;
     }
 
+    .lightbox-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
     .lightbox-caption {
-      margin-top: 15px;
+      margin-top: 14px;
       color: #3b1e54;
       font-family: var(--font-handwriting);
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 700;
     }
 
@@ -1729,39 +1788,39 @@
       <!-- Sección A: Galería Polaroid -->
       <div id="view-polaroids" class="polaroid-gallery-container" role="tabpanel">
         <!-- Tarjeta Polaroid 1 -->
-        <div class="polaroid-card" data-photo-index="0" role="button" tabindex="0" title="Toca para ampliar">
+        <div class="polaroid-card" data-photo-index="0" role="button" tabindex="0" title="Toca para ampliar foto 1">
           <div class="polaroid-tape"></div>
           <div class="polaroid-photo-frame">
-            <div class="polaroid-placeholder-art" id="photo-box-0">
-              <span class="placeholder-icon">🎉</span>
-              <span class="placeholder-hint">Espacio para Foto</span>
+            <div class="polaroid-img-container" id="photo-box-0">
+              <img src="FOTO1.jpeg" alt="Momentos de alegría" class="polaroid-img polaroid-img-1" loading="eager">
             </div>
           </div>
           <p class="polaroid-caption" id="photo-caption-0">Momentos de alegría ✨</p>
+          <span class="polaroid-zoom-hint">Toca para ampliar</span>
         </div>
 
         <!-- Tarjeta Polaroid 2 -->
-        <div class="polaroid-card" data-photo-index="1" role="button" tabindex="0" title="Toca para ampliar">
+        <div class="polaroid-card" data-photo-index="1" role="button" tabindex="0" title="Toca para ampliar foto 2">
           <div class="polaroid-tape"></div>
           <div class="polaroid-photo-frame">
-            <div class="polaroid-placeholder-art" id="photo-box-1">
-              <span class="placeholder-icon">🌟</span>
-              <span class="placeholder-hint">Espacio para Foto</span>
+            <div class="polaroid-img-container" id="photo-box-1">
+              <img src="FOTO2.jpeg" alt="Nuevos sueños por cumplir" class="polaroid-img polaroid-img-2" loading="lazy">
             </div>
           </div>
           <p class="polaroid-caption" id="photo-caption-1">Nuevos sueños por cumplir 🎯</p>
+          <span class="polaroid-zoom-hint">Toca para ampliar</span>
         </div>
 
         <!-- Tarjeta Polaroid 3 -->
-        <div class="polaroid-card" data-photo-index="2" role="button" tabindex="0" title="Toca para ampliar">
+        <div class="polaroid-card" data-photo-index="2" role="button" tabindex="0" title="Toca para ampliar foto 3">
           <div class="polaroid-tape"></div>
           <div class="polaroid-photo-frame">
-            <div class="polaroid-placeholder-art" id="photo-box-2">
-              <span class="placeholder-icon">🎂</span>
-              <span class="placeholder-hint">Espacio para Foto</span>
+            <div class="polaroid-img-container" id="photo-box-2">
+              <img src="FOTO3.jpeg" alt="Un año extraordinario" class="polaroid-img polaroid-img-3" loading="lazy">
             </div>
           </div>
-          <p class="polaroid-caption" id="photo-caption-2">Un año extraordinario 💖</p>
+          <p class="polaroid-caption" id="photo-caption-2">Un año extraordinario 🌟</p>
+          <span class="polaroid-zoom-hint">Toca para ampliar</span>
         </div>
       </div>
 
@@ -1878,19 +1937,22 @@
         // Si lo dejas vacío (""), se mostrará una elegante tarjeta ilustrada de celebración.
         photos: [
           {
-            url: "", 
+            url: "FOTO1.jpeg", 
             caption: "Momentos de alegría ✨",
-            icon: "🎉"
+            icon: "🎉",
+            position: "center 25%"
           },
           {
-            url: "", 
+            url: "FOTO2.jpeg", 
             caption: "Nuevos sueños por cumplir 🎯",
-            icon: "🌟"
+            icon: "🌟",
+            position: "center center"
           },
           {
-            url: "", 
-            caption: "Un año extraordinario 💖",
-            icon: "🎂"
+            url: "FOTO3.jpeg", 
+            caption: "Un año extraordinario 🌟",
+            icon: "🌺",
+            position: "center 35%"
           }
         ],
         letterTitle: "Unas palabras para ti",
@@ -2372,7 +2434,9 @@
             if (captionEl && photo.caption) captionEl.textContent = photo.caption;
 
             if (boxEl && photo.url && photo.url.trim() !== "") {
-              boxEl.innerHTML = `<img src="${photo.url.trim()}" alt="${photo.caption || 'Foto de Sara'}" class="polaroid-img">`;
+              boxEl.className = 'polaroid-img-container';
+              const posStyle = photo.position ? `style="object-position: ${photo.position};"` : '';
+              boxEl.innerHTML = `<img src="${photo.url.trim()}" alt="${photo.caption || 'Foto de Sara'}" class="polaroid-img polaroid-img-${idx + 1}" ${posStyle}>`;
             }
           });
         }
@@ -2561,14 +2625,14 @@
         const btnCloseLightbox = document.getElementById('btn-lightbox-close');
 
         polaroidCards.forEach(card => {
-          card.addEventListener('click', () => {
+          const openCard = () => {
             const idx = parseInt(card.getAttribute('data-photo-index') || '0', 10);
             const photoData = (BIRTHDAY_CONFIG.scene4.photos && BIRTHDAY_CONFIG.scene4.photos[idx]) 
               ? BIRTHDAY_CONFIG.scene4.photos[idx] 
               : { caption: "Recuerdo especial", icon: "✨" };
 
             if (photoData.url && photoData.url.trim() !== "") {
-              lightboxImgBox.innerHTML = `<img src="${photoData.url}" alt="${photoData.caption}" style="width:100%;height:100%;object-fit:cover;">`;
+              lightboxImgBox.innerHTML = `<img src="${photoData.url}" alt="${photoData.caption}" class="lightbox-img">`;
             } else {
               lightboxImgBox.innerHTML = `
                 <div class="polaroid-placeholder-art">
@@ -2581,6 +2645,14 @@
             lightboxCaption.textContent = photoData.caption || "Recuerdo especial";
             lightbox.classList.add('is-active');
             AudioEngine.playChimeSound();
+          };
+
+          card.addEventListener('click', openCard);
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              openCard();
+            }
           });
         });
 
