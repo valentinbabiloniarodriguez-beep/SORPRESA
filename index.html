@@ -1007,26 +1007,12 @@
       transform: scale(1);
     }
 
-    /* Posiciones de las flores principales del ramo (organizadas armónicamente en el tallo) */
-    .flower-center { top: 120px; left: 160px; z-index: 10; }
-    .flower-left   { top: 165px; left: 95px; z-index: 8; }
-    .flower-right  { top: 170px; left: 225px; z-index: 8; }
-    .flower-top-l  { top: 90px; left: 115px; z-index: 6; }
-    .flower-top-r  { top: 95px; left: 205px; z-index: 6; }
-
-    /* Sépalos verdes naturales que unen la base de cada flor con su tallo */
-    .flower-sepal {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -15%);
-      width: 22px;
-      height: 14px;
-      background: radial-gradient(ellipse at 50% 100%, #10b981 0%, #065f46 85%);
-      clip-path: polygon(50% 100%, 0% 15%, 25% 45%, 50% 20%, 75% 45%, 100% 15%);
-      z-index: 1;
-      opacity: 0.95;
-    }
+    /* Posiciones de las flores principales del ramo */
+    .flower-center { top: 95px; left: 160px; }
+    .flower-left   { top: 145px; left: 85px; }
+    .flower-right  { top: 150px; left: 235px; }
+    .flower-top-l  { top: 60px; left: 110px; }
+    .flower-top-r  { top: 65px; left: 215px; }
 
     /* Pétalos 3D */
     .petal {
@@ -1045,23 +1031,20 @@
       transform: translate(-50%, -100%) rotate(var(--rot, 0deg)) rotateX(var(--rx, 35deg)) translateY(var(--ty, 0px)) scale(1);
     }
 
-    /* Estilos florales naturales con texturas suaves */
+    /* Estilos florales */
     .petal-golden-peony {
-      background: radial-gradient(circle at 40% 30%, #fffbe6 0%, #ffd166 45%, #f4a261 100%);
-      box-shadow: 0 0 16px rgba(255, 209, 102, 0.45);
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: radial-gradient(circle at 40% 30%, #fff7cc 0%, #ffd166 40%, #f4a261 100%);
+      box-shadow: 0 0 15px rgba(255, 209, 102, 0.5);
     }
 
     .petal-lavender-blossom {
-      background: radial-gradient(circle at 40% 30%, #ffffff 0%, #e0d4fd 40%, #9575cd 100%);
+      background: radial-gradient(circle at 40% 30%, #ffffff 0%, #d1c4e9 45%, #9575cd 100%);
       box-shadow: 0 0 15px rgba(179, 157, 219, 0.45);
-      border: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .petal-soft-rose {
-      background: radial-gradient(circle at 40% 30%, #ffffff 0%, #fbc4d6 45%, #ec407a 100%);
-      box-shadow: 0 0 14px rgba(248, 187, 208, 0.42);
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: radial-gradient(circle at 40% 30%, #fff0f5 0%, #f8bbd0 45%, #ec407a 100%);
+      box-shadow: 0 0 14px rgba(248, 187, 208, 0.4);
     }
 
     .flower-core {
@@ -2170,18 +2153,20 @@
      */
     const BotanicalEngine = {
       stemDefinitions: [
-        { id: 'stem-center', d: 'M 160,370 Q 159,250 160,120', width: 4.5, delay: 100 },
-        { id: 'stem-left',   d: 'M 160,360 Q 130,270 95,165',  width: 3.8, delay: 250 },
-        { id: 'stem-right',  d: 'M 160,360 Q 190,275 225,170', width: 3.8, delay: 350 },
-        { id: 'stem-sub-l',  d: 'M 140,260 Q 118,180 115,90',  width: 2.8, delay: 500 },
-        { id: 'stem-sub-r',  d: 'M 180,260 Q 202,185 205,95',  width: 2.8, delay: 600 }
+        { id: 'stem-center', d: 'M 160,380 Q 158,260 160,150', width: 4.5, delay: 100 },
+        { id: 'stem-left',   d: 'M 160,370 Q 130,280 85,190',  width: 3.8, delay: 250 },
+        { id: 'stem-right',  d: 'M 160,370 Q 190,285 235,195', width: 3.8, delay: 350 },
+        { id: 'stem-sub-l',  d: 'M 145,280 Q 115,180 110,95',  width: 2.8, delay: 500 },
+        { id: 'stem-sub-r',  d: 'M 175,280 Q 205,185 215,100', width: 2.8, delay: 600 }
       ],
 
       leafDefinitions: [
-        { d: 'M 0,0 C 18,-10 32,-4 38,8 C 26,18 10,14 0,0 Z', x: 154, y: 285, rot: -40, isRight: false, delay: 1100 },
-        { d: 'M 0,0 C -18,-10 -32,-4 -38,8 C -26,18 -10,14 0,0 Z', x: 166, y: 265, rot: 38, isRight: true, delay: 1250 },
-        { d: 'M 0,0 C 16,-8 28,-3 34,6 C 24,15 9,12 0,0 Z', x: 122, y: 220, rot: -50, isRight: false, delay: 1400 },
-        { d: 'M 0,0 C -16,-8 -28,-3 -34,6 C -24,15 -9,12 0,0 Z', x: 198, y: 225, rot: 48, isRight: true, delay: 1550 }
+        { d: 'M 0,0 C 18,-10 32,-4 38,8 C 26,18 10,14 0,0 Z', x: 150, y: 270, rot: -45, isRight: false, delay: 1100 },
+        { d: 'M 0,0 C -18,-10 -32,-4 -38,8 C -26,18 -10,14 0,0 Z', x: 170, y: 250, rot: 40, isRight: true, delay: 1250 },
+        { d: 'M 0,0 C 16,-8 28,-3 34,6 C 24,15 9,12 0,0 Z', x: 115, y: 220, rot: -55, isRight: false, delay: 1400 },
+        { d: 'M 0,0 C -16,-8 -28,-3 -34,6 C -24,15 -9,12 0,0 Z', x: 205, y: 225, rot: 50, isRight: true, delay: 1550 },
+        { d: 'M 0,0 C 12,-6 22,-2 26,5 C 18,12 7,10 0,0 Z', x: 130, y: 140, rot: -30, isRight: false, delay: 1700 },
+        { d: 'M 0,0 C -12,-6 -22,-2 -26,5 C -18,12 -7,10 0,0 Z', x: 190, y: 145, rot: 30, isRight: true, delay: 1800 }
       ],
 
       initDOM: function() {
@@ -2228,7 +2213,7 @@
       buildPeony: function(containerId, count, petalClass) {
         const container = document.getElementById(containerId);
         if (!container) return;
-        container.innerHTML = '<div class="flower-sepal"></div>';
+        container.innerHTML = '';
 
         const core = document.createElement('div');
         core.className = 'flower-core';
@@ -2257,7 +2242,7 @@
       buildBlossom: function(containerId, count, petalClass) {
         const container = document.getElementById(containerId);
         if (!container) return;
-        container.innerHTML = '<div class="flower-sepal"></div>';
+        container.innerHTML = '';
 
         const core = document.createElement('div');
         core.className = 'flower-core';
@@ -2284,7 +2269,7 @@
       buildBud: function(containerId, count, petalClass) {
         const container = document.getElementById(containerId);
         if (!container) return;
-        container.innerHTML = '<div class="flower-sepal" style="width:14px;height:12px;"></div>';
+        container.innerHTML = '';
 
         for (let i = 0; i < count; i++) {
           const petal = document.createElement('div');
